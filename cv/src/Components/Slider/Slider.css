@@ -5,7 +5,8 @@
   }
   
   .mainContainer {
-    margin: 0 20px;
+    /* margin: 0 20px; */
+
   }
   
   .innerBody {
@@ -14,6 +15,7 @@
     align-items: center;
     min-height: 100vh;
     color: #fff;
+    
   }
   
  
@@ -21,7 +23,10 @@
     width: 900px;
     /* min-width: 300px; */
     margin: 0 15px !important; 
-
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
   
   @media (max-width: 992px) {
@@ -37,6 +42,7 @@
   }
   
   .container {
+    
     border-radius: 20px;
   }
   

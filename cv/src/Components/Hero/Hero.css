@@ -1,5 +1,6 @@
 :root {
     --primary-color: #1d80ff;
+    --accent-color: #00d4ff;
   }
   
   * {
@@ -62,7 +63,7 @@
   
   .message {
     font-size: 16px;
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
   
   .title {
@@ -73,7 +74,7 @@
   }
   
   .title span {
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
   
   .description {
@@ -87,8 +88,8 @@
   }
   
   .download-btn {
-    background: linear-gradient(180deg, skyblue, var(--primary-color));
-    box-shadow: 0 0 10px var(--primary-color);
+    background: linear-gradient(180deg, skyblue, var(--accent-color));
+    box-shadow: 0 0 10px var(--accent-color);
     text-decoration: none;
     width: max-content;
     padding: 10px 25px;
@@ -98,7 +99,7 @@
   }
   
   .see-work-btn {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--accent-color);
     color: #b5b5b5;
     text-decoration: none;
     width: max-content;

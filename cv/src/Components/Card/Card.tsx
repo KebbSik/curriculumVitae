@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.css";
 
 interface Props {
   cardNumber: number;
@@ -6,34 +7,28 @@ interface Props {
 
 export const Card = ({ cardNumber }: Props) => {
   return (
-    <div className="swiper-slide card">
-      <div className="cardContent">
-        <div className="image">
-          <div>IMAGE {cardNumber}</div>
+    <div className="card_wrapper">
+      <div className="cardData">
+        <div className="top_wrapper">
+          <div className="top">
+            <div className="preview">
+              <div>IMAGE {cardNumber}</div>
+            </div>
+          </div>
         </div>
-
-        <div className="socialMedia">
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-x-twitter"></i>
-          <i className="fa-brands fa-github"></i>
-        </div>
-
-        <div className="nameProfession">
-          <span className="name">Project Name</span>
-          <span className="profession">Project type</span>
-        </div>
-
-        <div className="rating">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
-
-        <div className="button">
-          <button className="aboutMe">About</button>
-          <button className="hireMe">Try it</button>
+        <div className="bottom_wrapper">
+          <div className="bottom">
+            <p className="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ut
+              atque est corrupti temporibus consequatur ipsa. Ut, perferendis.
+              Molestias dolore nemo quo eius cupiditate fugiat consequuntur
+              itaque tenetur dignissimos hic.
+            </p>
+            <div className="buttons">
+              <button className="aboutMe">About Me</button>
+              <button className="hireMe">Hire Me</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

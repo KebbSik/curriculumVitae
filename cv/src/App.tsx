@@ -7,7 +7,8 @@ import Hero from "./Components/Hero/Hero";
 import Slider from "./Components/Slider/Slider";
 import Paralax from "./Components/Paralax/Paralax";
 import Footer from "./Components/Footer/Footer";
-
+import Last from "./Components/Last/Last";
+import Square from "./Components/Square/Square";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -17,7 +18,8 @@ function App() {
       <Paralax />
       <Hero />
       <Slider />
-
+      <Square />
+      <Last />
       <Footer />
     </>
   );
