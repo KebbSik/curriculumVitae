@@ -1,0 +1,228 @@
+
+
+:root {
+    --primary-color: #0ef;
+  }
+  
+  .mainContainer {
+    margin: 0 20px;
+  }
+  
+  .innerBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+ 
+  .swiper {
+    width: 900px;
+    /* min-width: 300px; */
+    margin: 0 15px !important; 
+
+  }
+  
+  @media (max-width: 992px) {
+    .swiper {
+      width: 650px;
+    }
+  }
+  
+  @media (max-width: 759px) {
+    .swiper {
+      width: 300px;
+    }
+  }
+  
+  .container {
+    border-radius: 20px;
+  }
+  
+  .card .image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .card .image div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* object-fit: cover; */
+    border-radius: 50%;
+    color: #000;
+    font-weight: 700px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+  }
+  
+  .card {
+    position: relative;
+    background: #000;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    width: 250px;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    clip-path: circle(55% at 0 0);
+    border-top-left-radius: 10px;
+  }
+  
+  .card .cardContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .card .socialMedia {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card .socialMedia i {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card .socialMedia i:hover {
+    color: var(--primary-color);
+  }
+  
+  .card .nameProfession {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .nameProfession .name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .nameProfession .profession {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+  
+  .card .rating i {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0 2px;
+  }
+  
+  .card .button {
+    display: flex;
+    justify-content: space-around;
+    width: 110%;
+    margin-top: 20px;
+  }
+  
+  .card .button button {
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card .button button:hover {
+    background: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* (does not work) */
+  .custom-bullet {
+    height: 7px;
+    width: 26px;
+    background-color: #000;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  
+  .custom-bullet-active {
+    background-color: var(--primary-color);
+    opacity: 1;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: var(--primary-color);
+    font-size: 25px !important;
+  }
+
+.swiper-button-prev, .swiper-button-next {
+  border-radius: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: #eee9e96d;
+  transform: scale(1.2);
+}
+
+
+/*  */
+
+.prevBtn, .nextBtn {
+  display: flex;
+  font-size: 50px;
+  /* border: 2px solid #000; */
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.prevBtn {
+  order: 0;
+}
+
+.nextBtn {
+  order: 2;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+  background-color: #ffffff76;
+}
+  
+  /* (the same approach as this one up, but without 'important' statement) */
+  /* This targets elements only if they have a class, which increases specificity. */
+  /* .swiper-button-next[class]::after,
+  .swiper-button-prev[class]::after {
+    color: var(--primary-color);
+    font-size: 25px;
+  } */
+  

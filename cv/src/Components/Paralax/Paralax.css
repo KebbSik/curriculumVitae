@@ -1,0 +1,19 @@
+.paralax_container{
+    top: 0;
+    height: 100vh;
+    background-color: rgb(37, 177, 212);
+}
+
+.paralax_content{
+    position: absolute;
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 60px;
+    padding: 20px;
+    text-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
