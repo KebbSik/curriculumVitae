@@ -1,4 +1,3 @@
-import "./Hero.css";
 import profilePhoto from "../../assets/profilePhoto.jpg";
 import icon1 from "../../assets/backendIcon.png";
 import icon2 from "../../assets/stepIcon.png";

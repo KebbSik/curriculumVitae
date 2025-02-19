@@ -6,7 +6,7 @@ import Slider from "./Components/Slider/Slider";
 import Paralax from "./Components/Paralax/Paralax";
 import Footer from "./Components/Footer/Footer";
 import Last from "./Components/Last/Last";
-import Square from "./Components/Square/Square";
+import Skills from "./Components/Skills/Skills";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -21,7 +21,7 @@ function App() {
       <Paralax />
       <Hero />
       <Slider />
-      <Square />
+      <Skills />
       <Last />
       <Footer />
     </>
