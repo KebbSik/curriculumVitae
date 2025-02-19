@@ -31,11 +31,9 @@ const Hero = () => {
             </div>
             <div className="right">
               <div className="borders">
-                {/* <div className="borders"> */}
                 <div className="img-wrapper">
                   <img src={profilePhoto} alt="image" />
                 </div>
-                {/* </div> */}
               </div>
               <img src={icon1} alt="prism" className="prism" />
               <img src={icon2} alt="spiral" className="spiral" />
