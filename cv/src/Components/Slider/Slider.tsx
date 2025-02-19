@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Navigation } from "swiper/modules";
-import { Card } from "../Card/Card";
+import { Card } from "./Card";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
