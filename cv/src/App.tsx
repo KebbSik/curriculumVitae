@@ -22,6 +22,8 @@ function App() {
       <Hero />
       <Slider />
       <Skills />
+
+      {/* Last and Footer must stick together */}
       <Last />
       <Footer />
     </>
