@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./NavBar.css";
+
 import logo from "../../assets/logo.png";
 
 // max height of navbar - 85px

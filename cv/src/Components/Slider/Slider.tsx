@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import "./Slider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+
 import { Navigation } from "swiper/modules";
 import { Card } from "../Card/Card";
 import { IoIosArrowForward } from "react-icons/io";
