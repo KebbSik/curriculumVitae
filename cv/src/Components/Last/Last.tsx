@@ -1,11 +1,10 @@
-import React from "react";
-import "./Last.css";
-
 const Last = () => {
   return (
-    <div className="last">
-      This is last section (contact form or something simmilar){" "}
-    </div>
+    <section className="last">
+      <div className="last_container">
+        This is last section (contact form or something simmilar){" "}
+      </div>
+    </section>
   );
 };
 

@@ -3,6 +3,7 @@
 :root {
     --primary-color: #1d80ff;
     --accent-color: #00d4ff;
+    --secondary-color:#041e2f
   }
 
     
@@ -413,3 +414,19 @@ section > *:first-child {
     display: block;
     width: 100%;
   }
+
+    
+  /* -------------------- Last -------------------- */
+
+  .last_container{
+    text-align: center;
+    align-content: center;
+    font-size: 50px;
+    color: #fff;
+    width: 100vw;
+    height: 400px;
+
+    /* This bacground color must be in the last section  */
+    background: rgb(14,86,133);
+    background: linear-gradient(180deg, rgba(14,86,133,1) 0%, #041e2f 100%);
+}
