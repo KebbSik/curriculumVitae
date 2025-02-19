@@ -19,7 +19,7 @@ body{
 }
 
 
-/* NavBar --------------------- */
+/* -------------------- NavBar -------------------- */
 .header {
     position: fixed;
     top: 0;
@@ -148,7 +148,7 @@ body{
 
 
 
-  /* Hero ---------------------  */
+  /*--------------------- Hero ---------------------  */
 
   
   main {
@@ -323,4 +323,63 @@ body{
   }
 
 
+  /* -------------------- Slider -------------------- */
+  
+  .projects {
+
+  }
+  
+  .innerBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    
+  }
+  
+ 
+  .swiper {
+    width: 900px;
+    /* min-width: 300px; */
+    margin: 0 15px !important; 
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  @media (max-width: 992px) {
+    .swiper {
+      width: 650px;
+    }
+  }
+  
+  @media (max-width: 759px) {
+    .swiper {
+      width: 300px;
+    }
+  }
+  
+.prevBtn, .nextBtn {
+  display: flex;
+  font-size: 50px;
+  /* border: 2px solid #000; */
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.prevBtn {
+  order: 0;
+}
+
+.nextBtn {
+  order: 2;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+  background-color: #ffffff76;
+}
   

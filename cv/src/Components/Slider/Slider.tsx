@@ -9,7 +9,7 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const Slider = () => {
   return (
-    <section className="mainContainer">
+    <section className="projects">
       <div className="innerBody">
         <div className="prevBtn">
           <IoIosArrowBack />
