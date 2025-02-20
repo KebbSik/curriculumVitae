@@ -21,7 +21,9 @@ const SkillCard = ({ percent, skillName, color }: Props) => {
     const nubmerCounter = () => {
       setCurrentPercent((prev) => {
         if (prev < percent) {
-          setTimeout(nubmerCounter, 20);
+          setTimeout(() => {
+            nubmerCounter();
+          }, 100);
           return prev + 1;
         }
 

@@ -66,3 +66,16 @@ SNAP SCROLLING:
 
 
 https://www.youtube.com/watch?v=OjEg0IBR_ak&ab_channel=Sajid
+
+
+btreakpoints (use 'max width')
+
+480px
+
+481px - 768px
+
+769px - 992px !
+
+993px - 1279px
+
+1280px

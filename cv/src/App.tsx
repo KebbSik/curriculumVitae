@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import About from "./Components/About/About";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,8 +21,9 @@ function App() {
       <NavBar />
       <Paralax />
       <Hero />
-      <Slider />
+      <About />
       <Skills />
+      <Slider />
 
       {/* Last and Footer must stick together */}
       <Last />
