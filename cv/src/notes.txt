@@ -79,3 +79,11 @@ btreakpoints (use 'max width')
 993px - 1279px
 
 1280px
+
+
+add small aminatons per time,
+buttons and borders with gradient 
+
+obydwa obrazki do paralax musza byc długie, (rozkminić długość),
+Pamiętając przy tym, ż jeden (ten w tle),
+powinien szybciej się kończyć (byc przezroczysty)
