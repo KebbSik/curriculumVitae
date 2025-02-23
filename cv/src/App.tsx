@@ -12,6 +12,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import About from "./Components/About/About";
+import Translator from "./Components/ColorTranslator/Translator";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
     <>
       <NavBar />
       <Paralax />
+      <Translator />
       <Hero />
       <About />
       <Skills />
