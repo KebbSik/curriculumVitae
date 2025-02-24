@@ -103,6 +103,7 @@ section>*:first-child {
 
 .navbar a,
 .navbarToggle a {
+	position: relative;
 	font-size: 1.5rem;
 	color: var(--white-color);
 	text-decoration: none;
@@ -112,10 +113,29 @@ section>*:first-child {
 	display: inline-block;
 }
 
+
+
 .navbar>a:hover,
 .navbarToggle>a:hover {
 	transform: scale(1.2);
 }
+
+.navbar a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: var(--white-color);
+	transition: 0.2s ease-in;
+}
+
+
+.navbar a:hover::after{
+	width: 100%;
+}
+
 
 .icons {
 	position: absolute;
@@ -809,9 +829,10 @@ footer {
     /* position: absolute; */
     top: 1000px;
     width: 100%;
-    height: 150px;    
+    height: 100px;    
 	z-index: 10000;
 	background: rgb(3,111,193);
-background: linear-gradient(180deg, rgba(3,111,193,1) 1%, rgba(14,86,133,1) 100%);
+	background: linear-gradient(180deg, rgb(3, 96, 167) 1%, rgba(14,86,133,1) 100%);
+
 }
 

@@ -35,7 +35,7 @@ const NavBar = () => {
         <a href="#">Contact</a>
       </nav>
 
-      <nav
+      {/* <nav
         className={
           openedMenu ? "navbarToggle displayToggleNav" : "navbarToggle"
         }
@@ -45,7 +45,7 @@ const NavBar = () => {
         <a href="#">Gallery</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
-      </nav>
+      </nav> */}
     </header>
   );
 };
