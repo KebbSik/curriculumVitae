@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import About from "./Components/About/About";
 import Translator from "./Components/ColorTranslator/Translator";
+import Cave from "./Components/Cave/Cave";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,8 +26,8 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Slider />
-
+      {/* <Slider /> */}
+      <Cave />
       {/* Last and Footer must stick together */}
       <Last />
       <Footer />
