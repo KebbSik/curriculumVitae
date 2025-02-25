@@ -22,8 +22,9 @@ const Cave = () => {
   };
 
   return (
-    <>
-      {/* <img className="cave_img" src={cave2} alt="" /> */}
+    <div className="whole_cave">
+      <img className="cave_img img_back" src={cave2} alt="" />
+      <img className="cave_img img_front" src={cave1} alt="" />
 
       <section className="cave_section">
         <button onClick={() => scrollPrev()}>
@@ -60,8 +61,7 @@ const Cave = () => {
           <i className="fa-solid fa-chevron-right"></i>
         </button>
       </section>
-      {/* <img className="cave_img" src={cave1} alt="" /> */}
-    </>
+    </div>
   );
 };
 
