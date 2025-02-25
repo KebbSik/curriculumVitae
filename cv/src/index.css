@@ -843,3 +843,107 @@ footer {
 
 }
 
+
+/* -------------------- Cave -------------------- */
+.cave_img{
+    position: absolute;
+    margin-top: 0px;
+    color: white;
+    width: 100%;
+    /* gap: 15px; */
+    object-fit: cover;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.cave_section {
+	/* position: absolute; */
+	border: 2px solid yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .cave_wrapper {
+	border: 1px solid white;
+	margin: 150px 7.5rem 150px 7.5rem;
+	max-width: 1400px;
+  }
+  
+  .cave_container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 100%;
+	overflow-x: scroll;
+  }
+  
+  .group {
+	border: 2px solid green;
+	/* background-color: blueviolet; */
+	width: 100%;
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(2, auto);
+	gap: 1rem;
+	justify-content: space-around;
+	padding: 2rem 10rem;
+  }
+  
+  .box {
+	width: 400px;
+	height: 300px;
+	background-color: rgb(137, 41, 41);
+	border: 5px solid black;
+	border-radius: 20px;
+	transition: 0.2s ease-in-out;
+  }
+  
+  .box:hover {
+	transform: scale(1.05);
+  }
+  
+  .snap_scroller {
+	scroll-snap-type: inline mandatory;
+	/* or proximity */
+  }
+  
+  .snap_scroller > * {
+	scroll-snap-align: start;
+	/* scroll-snap-stop: always; */
+  }
+  
+  .cave_section > button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 2rem;
+	cursor: pointer;
+	z-index: 99;
+  }
+  
+  @media (max-width: 996px) {
+	.cave_wrapper {
+	  max-width: 1000px;
+	}
+	.group {
+	  padding: 0;
+	  justify-content: center;
+	}
+	.box {
+	  width: 350px;
+	  height: 260px;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.cave_wrapper {
+	}
+	.group {
+	}
+	.box {
+	}
+	/* W pewnym momencie groups (grid) w HTML znikną 
+	zamis ttego pojawi sie flex  */
+  }
+  
+  /* https://www.youtube.com/watch?v=3yfswsnD2sw&ab_channel=KevinPowell */
+  
