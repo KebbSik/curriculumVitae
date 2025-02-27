@@ -697,7 +697,7 @@ height: 100%;
 }
 
 .swiper_box .swiper {
-  width: 60%;
+  width: 55%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -713,6 +713,9 @@ height: 100%;
   display: block;
 	width: 100%;
 }
+.swiper-wrapper {
+	transition-timing-function: ease-in-out !important;
+  }
 
 .skills h2{
   text-align: center;
@@ -878,7 +881,7 @@ footer {
 
 .cave_section{
 	/* position: absolute; */
-	border: 2px solid yellow;
+	/* border: 2px solid yellow; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -889,7 +892,7 @@ footer {
   }
   
   .cave_wrapper {
-	border: 1px solid white;
+	/* border: 1px solid white; */
 	margin: 150px 7.5rem 150px 7.5rem;
 	max-width: 1400px;
   }
@@ -902,7 +905,7 @@ footer {
   }
   
   .group {
-	border: 2px solid green;
+	/* border: 2px solid green; */
 	/* background-color: blueviolet; */
 	width: 100%;
 	display: grid;
@@ -920,6 +923,7 @@ footer {
 	border-radius: 20px;
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
+
   }
   
   .box:hover {

@@ -1,7 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Autoplay,
+  FreeMode,
+  EffectFade,
+} from "swiper/modules";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
@@ -12,19 +18,36 @@ const Skills = () => {
         <div className="swiper_box">
           <Swiper
             effect={"coverflow"}
+            // fadeEffect={{ crossFade: true }}
+            // loopAdditionalSlides={1}
+            watchSlidesProgress={true}
             grabCursor={true}
             centeredSlides={true}
             loop={true}
             slidesPerView={"auto"}
+            // freeMode={true}
+            speed={6000}
+            spaceBetween={50}
             coverflowEffect={{
-              rotate: 50,
+              rotate: -1,
               stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
+              depth: 150,
+              modifier: 3,
+              scale: 0.99,
             }}
-            pagination={true}
-            modules={[EffectCoverflow, Pagination]}
+            // pagination={true} //add pages bar
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            modules={[
+              EffectCoverflow,
+              Pagination,
+              Autoplay,
+              // FreeMode,
+              EffectFade,
+            ]}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -51,6 +74,9 @@ const Skills = () => {
             </SwiperSlide>
             <SwiperSlide>
               <SkillCard percent={33} skillName="TypeScript" color="orange" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SkillCard percent={45} skillName="Node" color="pink" />
             </SwiperSlide>
           </Swiper>
         </div>
