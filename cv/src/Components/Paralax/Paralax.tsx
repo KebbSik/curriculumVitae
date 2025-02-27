@@ -20,7 +20,7 @@ const Paralax = () => {
 
         const titleElement = elementsRef.current[2];
         if (titleElement) {
-          titleElement.style.display = value < 520 ? "block" : "none";
+          titleElement.style.opacity = `${1 - value * 0.0025}`;
         }
       });
     };
