@@ -24,7 +24,7 @@ function App() {
       <Paralax />
       <Translator />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       {/* <Slider /> */}
       <Cave />

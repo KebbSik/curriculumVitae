@@ -33,7 +33,8 @@ body {
 }
 
 section {
-	/* border: 1px solid yellow; */
+	border: 1px solid yellow;
+	margin: 50px 0;
 	/* width: 100%; */
 }
 
@@ -98,7 +99,7 @@ section>*:first-child {
 .navbar a,
 .navbarToggle a {
 	position: relative;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	color: var(--white-color);
 	text-decoration: none;
 	font-weight: 500;
@@ -296,7 +297,8 @@ main {
 	width: clamp(10.625rem, 5.5422rem + 22.5904vw, 30rem);
 	height: clamp(10.625rem, 5.5422rem + 22.5904vw, 30rem);
 	border: 1px solid rgb(109, 109, 254);
-	border-radius: 250px;
+	border-radius: 25px;
+	margin: 10px;
 	padding: 20px;
 	background: linear-gradient(200deg, transparent 70%, rgb(89, 130, 253));
 }
@@ -332,7 +334,6 @@ main {
 	left: 5px;
 	width: 100px;
 	filter: hue-rotate(250deg) brightness(1.5);
-	/*????*/
 	animation: rotate 5s infinite alternate-reverse ease-in-out;
 }
 
@@ -349,11 +350,41 @@ main {
 	from {
 		transform: rotate(0deg) scale(0.8);
 	}
-
 	to {
 		transform: rotate(306deg) scale(1);
 	}
 }
+
+/* Breakpoints */
+
+@media (max-width: 992px){
+	.hero{
+		justify-content: space-around;
+		padding: 0
+	};
+}
+
+@media (max-width: 768px){
+	/* .borders{
+		border: none;
+		background: none;
+	}
+	.hero{
+		padding: 0 10px;
+	} */
+	 .hero{
+		flex-direction: column-reverse;
+	 }
+	 .borders, .prism, .spiral{
+		display: none;
+	 }
+	 .left{
+		text-align: center;
+		transform: scale(1.15)
+	 } ;
+
+}
+
 /* -------------------- About -------------------- */
 
 .grid{

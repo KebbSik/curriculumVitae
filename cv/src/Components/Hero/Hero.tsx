@@ -34,8 +34,8 @@ const Hero = () => {
                   <img src={profilePhoto} alt="image" />
                 </div>
               </div>
-              <img src={icon1} alt="prism" className="prism" />
-              <img src={icon2} alt="spiral" className="spiral" />
+              <img src={icon1} alt="icon1" className="prism" />
+              <img src={icon2} alt="icon2" className="spiral" />
             </div>
           </div>
         </div>
