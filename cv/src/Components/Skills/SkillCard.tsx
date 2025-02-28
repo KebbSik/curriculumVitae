@@ -51,8 +51,8 @@ const SkillCard = ({ percent, skillName, color }: Props) => {
               ref={(el) => {
                 blockRefs.current[i] = el;
               }}
-              // className="block"
-              className={i > percent ? "block" : "block loadColor"}
+              className="block"
+              // className={i > percent ? "block" : "block loadColor"}
               style={{
                 background: i > percent ? `` : `${color}`,
                 // boxShadow: `0 0 15px ${color}`,
@@ -62,8 +62,6 @@ const SkillCard = ({ percent, skillName, color }: Props) => {
               }}
             ></div>
           ))}
-
-          {/* <div ref={blockRef} className="block"></div> */}
         </div>
       </div>
     </div>
