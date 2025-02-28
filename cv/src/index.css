@@ -8,7 +8,7 @@
 	--accent-color: rgb(0, 212, 255);
 	--white-color: rgb(255, 255, 255);
 	--black-color: rgb(0, 0, 0);
-
+	
 }
 
 
@@ -862,12 +862,14 @@ footer {
     width: 100%;
     /* gap: 15px; */
     object-fit: cover;
-    height: 100vh;
+    height: 100%;
     /* overflow: hidden; */
 }
 
 .img_front{
-	z-index: 100 ;
+	/* display: none; */
+	z-index: 3 ;
+	pointer-events: none; /* Makes sure it does not block interactions */
 }
 
 .img_back{
@@ -885,16 +887,18 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* width: 100%; */
   }
 
   .cave_section > * {
-	z-index: 2;
+	/* z-index: 2; */
   }
   
   .cave_wrapper {
 	/* border: 1px solid white; */
-	margin: 150px 7.5rem 150px 7.5rem;
-	max-width: 1400px;
+	margin: 150px 0rem ;
+	/* max-width: 1400px; */
+	width: 100%;
   }
   
   .cave_container {
@@ -902,17 +906,17 @@ footer {
 	grid-auto-flow: column;
 	grid-auto-columns: 100%;
 	overflow-x: scroll;
+
   }
   
   .group {
-	/* border: 2px solid green; */
-	/* background-color: blueviolet; */
 	width: 100%;
 	display: grid;
 	grid-template: repeat(2, auto) / repeat(2, auto);
 	gap: 3rem;
 	justify-content: center;
-	padding: 2rem 10rem;
+	padding: 2rem 0rem;
+	z-index: 2;
   }
   
   .box {
@@ -940,14 +944,48 @@ footer {
 	/* scroll-snap-stop: always; */
   }
   
-  .cave_section > button {
+  .cave_btn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	font-size: 2rem;
 	cursor: pointer;
-	z-index: 9999;
+	z-index: 1000;
   }
+
+  .left{
+	left: 10px;
+  }
+  .right{
+	right: 10px;
+  }
+
+  .whole_cave{
+	position: relative;
+  }
+  
+.absolute_gradient{
+	position: absolute;
+	/* top: 0;
+	left: 0; */
+	width: 100%;
+	height: 100px;
+	/* background: red; */
+	/* background: linear-gradient(0deg, rgba(3,111,193,0) 7%, rgba(14,86,133,1) 100%); */
+	background: linear-gradient(180deg, rgba(14,86,133,1) 0%, rgba(252,176,69,0) 65%);
+	z-index: 9999;
+}
+
+.reversed{
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(3,111,193,0) 7%, rgba(14,86,133,1) 100%);
+}
   
   @media (max-width: 996px) {
 	.cave_wrapper {
@@ -973,6 +1011,3 @@ footer {
 	/* W pewnym momencie groups (grid) w HTML znikną 
 	zamis ttego pojawi sie flex  */
   }
-  
-  /* https://www.youtube.com/watch?v=3yfswsnD2sw&ab_channel=KevinPowell */
-  
