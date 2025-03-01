@@ -27,20 +27,21 @@ const Skills = () => {
             slidesPerView={"auto"}
             // freeMode={true}
             speed={6000}
+            // speed={0}
             spaceBetween={50}
             coverflowEffect={{
               rotate: -1,
-              stretch: 0,
+              stretch: 20,
               depth: 150,
               modifier: 3,
               scale: 0.99,
             }}
             // pagination={true} //add pages bar
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
+            // autoplay={{
+            //   delay: 0,
+            //   disableOnInteraction: false,
+            //   pauseOnMouseEnter: true,
+            // }}
             modules={[
               EffectCoverflow,
               Pagination,
@@ -75,9 +76,9 @@ const Skills = () => {
             <SwiperSlide>
               <SkillCard percent={33} skillName="TypeScript" color="orange" />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <SkillCard percent={45} skillName="Node" color="pink" />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
