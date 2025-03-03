@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 import {
   EffectCoverflow,
@@ -37,11 +38,11 @@ const Skills = () => {
               scale: 0.99,
             }}
             // pagination={true} //add pages bar
-            // autoplay={{
-            //   delay: 0,
-            //   disableOnInteraction: false,
-            //   pauseOnMouseEnter: true,
-            // }}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
             modules={[
               EffectCoverflow,
               Pagination,

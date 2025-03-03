@@ -92,3 +92,7 @@ buttons and borders with gradient
 obydwa obrazki do paralax musza byc długie, (rozkminić długość),
 Pamiętając przy tym, ż jeden (ten w tle),
 powinien szybciej się kończyć (byc przezroczysty)
+
+stroke line animatio throug "about section", it makes 
+page look whole 
+https://www.youtube.com/watch?v=RGWXVbkrYKM&ab_channel=CodexCommunity

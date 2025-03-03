@@ -2,9 +2,10 @@ import React from "react";
 
 interface Props {
   isReversed?: boolean;
+  image?: string;
 }
 
-const AboutCard = ({ isReversed }: Props) => {
+const AboutCard = ({ isReversed, image }: Props) => {
   return (
     <div className="about_card">
       <div
@@ -14,6 +15,7 @@ const AboutCard = ({ isReversed }: Props) => {
       >
         <div className="card_left">
           {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
+          <img src={image ? image : "https://placehold.co/600x400"} />
         </div>
         <div className="card_right">
           <p>

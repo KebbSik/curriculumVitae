@@ -2,32 +2,29 @@ import { useState } from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import Hero from "./Components/Hero/Hero";
-// import Slider from "./Components/Slider/Slider";
 import Paralax from "./Components/Paralax/Paralax";
 import Footer from "./Components/Footer/Footer";
 import Last from "./Components/Last/Last";
 import Skills from "./Components/Skills/Skills";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import About from "./Components/About/About";
 import Translator from "./Components/ColorTranslator/Translator";
 import Cave from "./Components/Cave/Cave";
+import Motion from "./Components/Motion/Motion";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      {/* <Motion /> */}
       <NavBar />
       <Paralax />
       <Translator />
       <Hero />
-      {/* <About /> */}
+      <About />
       <Skills />
-      {/* <Slider /> */}
       <Cave />
+
       {/* Last and Footer must stick together */}
       <Last />
       <Footer />

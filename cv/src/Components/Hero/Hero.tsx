@@ -1,6 +1,9 @@
 import profilePhoto from "../../assets/profilePhoto.jpg";
+import portrait from "../../assets/stickers/portrait.png";
 import icon1 from "../../assets/backendIcon.png";
 import icon2 from "../../assets/stepIcon.png";
+import sticker2 from "../../assets/stickers/sticker2.png";
+
 const Hero = () => {
   return (
     <main>
@@ -29,13 +32,18 @@ const Hero = () => {
               </div>
             </div>
             <div className="right">
+              <div className="responsiveStickerWrapper">
+                <img className="responsiveSticker" src={sticker2} alt="image" />
+              </div>
+
               <div className="borders">
                 <div className="img-wrapper">
-                  <img src={profilePhoto} alt="image" />
+                  {/* <img src={profilePhoto} alt="image" /> */}
+                  <img src={portrait} alt="image" />
                 </div>
               </div>
-              <img src={icon1} alt="icon1" className="prism" />
-              <img src={icon2} alt="icon2" className="spiral" />
+              {/* <img src={icon1} alt="icon1" className="prism" /> */}
+              {/* <img src={icon2} alt="icon2" className="spiral" /> */}
             </div>
           </div>
         </div>
