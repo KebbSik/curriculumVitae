@@ -32,37 +32,29 @@ const Cave = () => {
 
       <section className="cave_section">
         <div className="cave_wrapper ">
+          <button className="cave_btn left" onClick={() => scrollPrev()}>
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
           <div ref={containerRef} className="cave_container snap_scroller">
-            <button className="cave_btn left" onClick={() => scrollPrev()}>
-              <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            <div className="group">
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-            </div>
-            <div className="group">
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-            </div>
-            <div className="group">
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-            </div>
-            <div className="group">
-              <div className="box"></div>
-              <div className="box"></div>
-              <div className="box"></div>
-            </div>
-            <button className="cave_btn right" onClick={() => scrollNext()}>
-              <i className="fa-solid fa-chevron-right"></i>
-            </button>
+            <div className="box">1</div>
+            <div className="box">2</div>
+            <div className="box">3</div>
+            <div className="box">4</div>
+            <div className="box">5</div>
+            <div className="box">6</div>
+            <div className="box">7</div>
+            <div className="box">8</div>
+            <div className="box">9</div>
+            <div className="box">10</div>
+            <div className="box">11</div>
+            <div className="box">12</div>
+            <div className="box">13</div>
+            <div className="box">14</div>
+            <div className="box">15</div>
           </div>
+          <button className="cave_btn right" onClick={() => scrollNext()}>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </section>
     </div>

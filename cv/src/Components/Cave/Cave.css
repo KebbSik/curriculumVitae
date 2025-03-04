@@ -1,97 +1,3 @@
-.cave_img {
-  position: absolute;
-  margin-top: 0px;
-  color: white;
-  width: 100%;
-  /* gap: 15px; */
-  object-fit: cover;
-  height: 100%;
-  /* overflow: hidden; */
-}
-
-.img_front {
-  z-index: 3;
-  pointer-events: none; /* Makes sure it does not block interactions */
-}
-
-.img_back {
-}
-
-.cave_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cave_wrapper {
-  margin: 150px 0rem;
-  width: 100%;
-}
-
-.cave_container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 100%;
-  overflow-x: scroll;
-}
-
-.group {
-  width: 100%;
-  display: grid;
-  grid-template: repeat(2, auto) / repeat(2, auto);
-  gap: 3rem;
-  justify-content: center;
-  padding: 2rem 0rem;
-  z-index: 2;
-}
-
-.box {
-  width: 300px;
-  height: 200px;
-  background-color: rgb(137, 41, 41);
-  border: 5px solid black;
-  border-radius: 20px;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.box:hover {
-  transform: scale(1.05);
-}
-
-.snap_scroller {
-  scroll-snap-type: inline mandatory;
-  /* or proximity */
-}
-
-.snap_scroller > * {
-  scroll-snap-align: start;
-  /* scroll-snap-stop: always; */
-}
-
-.cave_btn {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.left {
-  left: 10px;
-}
-.right {
-  right: 10px;
-}
-
 .whole_cave {
   position: relative;
 }
@@ -117,30 +23,149 @@
   );
 }
 
-@media (max-width: 996px) {
-  .cave_wrapper {
-    max-width: 1000px;
-  }
-  .group {
-    padding: 0;
-    justify-content: center;
-    /* grid-template: repeat(2, auto), repeat(1, auto); */
-    display: flex;
+.cave_img {
+  position: absolute;
+  margin-top: 0px;
+  color: white;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.img_front {
+  z-index: 3;
+  pointer-events: none; /* Makes sure it does not block interactions */
+}
+
+.img_back {
+}
+/* ------------------------------------------cave buttons  */
+.cave_btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+/* ----------------------------------- actual cave  */
+.cave_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cave_wrapper {
+  width: 100%;
+  /* padding: 50px auto; */
+}
+
+.cave_container {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.cave_container :nth-child(3n) {
+  margin-right: 100vh;
+}
+
+.cave_container :nth-child(1) {
+  margin-left: 50vw;
+}
+.cave_container :last-child {
+  margin-right: 100vw;
+}
+
+.box {
+  flex: 0 0 350px;
+  height: 500px;
+  background-color: rgb(137, 41, 41);
+  border: 5px solid black;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.box:hover {
+  background-color: red;
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.snap_scroller {
+  scroll-snap-type: inline mandatory;
+}
+
+.snap_scroller > :nth-child(3n + 2) {
+  scroll-snap-align: center;
+}
+
+@media (min-width: 1400px) {
+  .cave_container {
+    gap: 3rem;
   }
   .box {
-    margin: 50px;
-    width: 350px;
-    height: 260px;
+    flex: 0 0 24rem;
   }
 }
 
-@media (max-width: 500px) {
-  .cave_wrapper {
-  }
-  .group {
-  }
+@media (max-width: 1279px) {
   .box {
+    flex: 0 0 270px;
+    height: 350px;
   }
-  /* W pewnym momencie groups (grid) w HTML znikną 
-      zamis ttego pojawi sie flex  */
+}
+
+@media (max-width: 992px) {
+  .cave_container :nth-child(3n) {
+    margin-right: unset;
+  }
+  .snap_scroller > :nth-child(3n + 2) {
+    scroll-snap-align: unset;
+  }
+  .cave_container :nth-child(n) {
+    margin-right: 100vw;
+  }
+  .snap_scroller > :nth-child(n) {
+    scroll-snap-align: center;
+  }
+  .snap_scroller > :last-child {
+    margin-right: 100vw;
+  }
+
+  .box {
+    flex: 0 0 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex: 0 0 300px;
+  }
 }
