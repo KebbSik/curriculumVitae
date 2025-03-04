@@ -3,7 +3,7 @@ import { useRef } from "react";
 // import cave2 from "../../assets/cave2.jpg";
 import caveFront from "../../assets/cave_back_2.jpeg";
 import caveBack from "../../assets/cave_front_2.png";
-
+import "./Cave.css";
 const Cave = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
