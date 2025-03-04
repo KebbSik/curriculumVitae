@@ -3,9 +3,15 @@ import { useRef } from "react";
 // import cave2 from "../../assets/cave2.jpg";
 import caveFront from "../../assets/cave_back_2.jpeg";
 import caveBack from "../../assets/cave_front_2.png";
+
+import { motion, useTransform, useScroll } from "framer-motion";
+
 import "./Cave.css";
 const Cave = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll();
+  const parallaxEffect = useTransform(scrollYProgress, [0, 1], [-1000, 100]);
 
   const scrollPrev = () => {
     console.log("prev");
@@ -24,10 +30,16 @@ const Cave = () => {
   };
 
   return (
-    <div className="whole_cave">
+    <motion.div className="whole_cave">
       <div className="absolute_gradient"></div>
       <div className="absolute_gradient reversed"></div>
-      <img className="cave_img img_back" src={caveFront} alt="" />
+
+      <motion.img
+        className="cave_img img_back"
+        src={caveFront}
+        alt=""
+        style={{ y: parallaxEffect }}
+      />
       <img className="cave_img img_front" src={caveBack} alt="" />
 
       <section className="cave_section">
@@ -57,7 +69,7 @@ const Cave = () => {
           </button>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
