@@ -40,7 +40,14 @@ const Cave = () => {
         alt=""
         style={{ y: parallaxEffect }}
       />
-      <img className="cave_img img_front" src={caveBack} alt="" />
+      <motion.img
+        className="cave_img img_front"
+        src={caveBack}
+        alt=""
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
+      />
 
       <section className="cave_section">
         <div className="cave_wrapper ">
@@ -48,21 +55,23 @@ const Cave = () => {
             <i className="fa-solid fa-chevron-left"></i>
           </button>
           <div ref={containerRef} className="cave_container snap_scroller">
-            <div className="box">1</div>
-            <div className="box">2</div>
-            <div className="box">3</div>
-            <div className="box">4</div>
-            <div className="box">5</div>
-            <div className="box">6</div>
-            <div className="box">7</div>
-            <div className="box">8</div>
-            <div className="box">9</div>
-            <div className="box">10</div>
-            <div className="box">11</div>
-            <div className="box">12</div>
-            <div className="box">13</div>
-            <div className="box">14</div>
-            <div className="box">15</div>
+            <motion.div
+              className="box"
+              initial={{ scale: 0, rotate: 180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+              viewport={{ once: true }}
+            >
+              1
+            </motion.div>
+            <motion.div className="box">2</motion.div>
+            <motion.div className="box">3</motion.div>
+            <motion.div className="box">4</motion.div>
+            <motion.div className="box">5</motion.div>
+            <motion.div className="box">6</motion.div>
+            <motion.div className="box">7</motion.div>
+            <motion.div className="box">8</motion.div>
+            <motion.div className="box">9</motion.div>x
           </div>
           <button className="cave_btn right" onClick={() => scrollNext()}>
             <i className="fa-solid fa-chevron-right"></i>

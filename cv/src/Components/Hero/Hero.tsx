@@ -3,6 +3,8 @@ import portrait from "../../assets/stickers/portrait.png";
 import icon1 from "../../assets/backendIcon.png";
 import icon2 from "../../assets/stepIcon.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
+import { easeIn, easeOut, motion } from "framer-motion";
+import { GiDuration } from "react-icons/gi";
 
 const Hero = () => {
   return (
@@ -11,7 +13,13 @@ const Hero = () => {
         <div className="hero_wrapper">
           <div className="hero">
             <div className="left">
-              <div className="info">
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6, ease: "backInOut" }}
+                viewport={{ once: true }}
+                className="info"
+              >
                 <p className="message">Welcome to My portfolio</p>
                 <p className="title">
                   Hello my <br /> name is <span>Kevin.</span>{" "}
@@ -20,31 +28,48 @@ const Hero = () => {
                   I'm FullStack Developer from Poland. <br /> Creating
                   responsive, interactive websites <br /> and applications{" "}
                 </p>
-              </div>
+              </motion.div>
               <div className="btns">
-                <a href="#" className="download-btn">
+                <motion.a
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  viewport={{ once: true }}
+                  href="#"
+                  className="download-btn"
+                >
                   Download CV
-                </a>
-                <a href="" className="see-work-btn">
+                </motion.a>
+                <motion.a
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5, ease: "easeInOut" }}
+                  viewport={{ once: true }}
+                  href=""
+                  className="see-work-btn"
+                >
                   See My work
                   <i className="fa-solid fa-arrow-right-long"></i>
-                </a>
+                </motion.a>
               </div>
             </div>
-            <div className="right">
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ rotate: 360, scale: 1 }}
+              transition={{ duration: 1.5, ease: "backOut" }}
+              viewport={{ once: true }}
+              className="right"
+            >
               <div className="responsiveStickerWrapper">
                 <img className="responsiveSticker" src={sticker2} alt="image" />
               </div>
 
               <div className="borders">
                 <div className="img-wrapper">
-                  {/* <img src={profilePhoto} alt="image" /> */}
                   <img src={portrait} alt="image" />
                 </div>
               </div>
-              {/* <img src={icon1} alt="icon1" className="prism" /> */}
-              {/* <img src={icon2} alt="icon2" className="spiral" /> */}
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

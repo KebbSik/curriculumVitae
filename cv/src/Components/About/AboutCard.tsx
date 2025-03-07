@@ -1,9 +1,28 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   isReversed?: boolean;
   image?: string;
 }
+
+const text = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            ratione et in similique harum ab! Expedita beatae ipsa natus odit
+            fugit ut, harum tempora? Ex ipsum praesentium quisquam non commodi
+            cupiditate consequuntur voluptatibus blanditiis aspernatur modi
+            corrupti, incidunt recusandae optio?`;
+
+const wrapper = {
+  hidden: { opacity: 1, color: "#ffffff" },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.01 },
+  },
+};
+const letters = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } },
+};
 
 const AboutCard = ({ isReversed, image }: Props) => {
   return (
@@ -17,15 +36,28 @@ const AboutCard = ({ isReversed, image }: Props) => {
           {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
           <img src={image ? image : "https://placehold.co/600x400"} />
         </div>
-        <div className="card_right">
-          <p>
+        <motion.div
+          variants={wrapper}
+          initial="hidden"
+          // animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="card_right"
+        >
+          {/* <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
             ratione et in similique harum ab! Expedita beatae ipsa natus odit
             fugit ut, harum tempora? Ex ipsum praesentium quisquam non commodi
             cupiditate consequuntur voluptatibus blanditiis aspernatur modi
             corrupti, incidunt recusandae optio?
-          </p>
-        </div>
+          </p> */}
+          {text.split("").map((char, index) => (
+            <motion.text key={index} variants={letters}>
+              {/* {char === "" ? "\u00A0" : char} */}
+              {char}
+            </motion.text>
+          ))}
+        </motion.div>
       </div>
     </div>
   );

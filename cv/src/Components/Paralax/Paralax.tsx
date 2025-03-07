@@ -4,11 +4,7 @@ import image1 from "../../assets/Image1.png";
 import image2 from "../../assets/Image2c.png";
 import { motion, useTransform, useScroll } from "framer-motion";
 
-const speeds = [0, -0.2, 0.5];
-
 const Paralax = () => {
-  const elementsRef = useRef<HTMLDivElement[]>([]);
-
   const { scrollYProgress } = useScroll();
   const parallaxImage1 = useTransform(scrollYProgress, [0, 1], [0, 0]);
   const parallaxImage2 = useTransform(scrollYProgress, [0, 1], [0, -1000]);

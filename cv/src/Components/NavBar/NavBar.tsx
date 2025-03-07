@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import logo from "../../assets/logo.png";
+import { motion } from "framer-motion";
 
 // max height of navbar - 85px
 
@@ -8,7 +9,12 @@ const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);
 
   return (
-    <header className="header">
+    <motion.header
+      initial={{ y: -85 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="header"
+    >
       <a href="#" className="logo">
         <img src={logo} alt="logo" />
       </a>
@@ -46,7 +52,7 @@ const NavBar = () => {
         <a href="#">Services</a>
         <a href="#">Contact</a>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

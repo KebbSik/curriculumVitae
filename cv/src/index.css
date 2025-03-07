@@ -336,37 +336,6 @@ main {
   transform: scale(1.11);
 }
 
-.prism,
-.spiral {
-  position: absolute;
-}
-
-.prism {
-  top: 0;
-  left: 5px;
-  width: 100px;
-  filter: hue-rotate(250deg) brightness(1.5);
-  animation: rotate 5s infinite alternate-reverse ease-in-out;
-}
-
-.spiral {
-  right: 0;
-  bottom: -20px;
-  width: 150px;
-  filter: hue-rotate(280deg);
-  animation: rotate 3s infinite alternate ease-in-out;
-}
-
-/* Rotate Animation */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg) scale(0.8);
-  }
-  to {
-    transform: rotate(306deg) scale(1);
-  }
-}
-
 /* Breakpoints */
 
 @media (max-width: 992px) {
