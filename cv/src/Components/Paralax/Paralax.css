@@ -1,56 +1,58 @@
-.paralax_container{
-    top: 0;
-    height: 100vh;
-    background-color: #25b1d4;
-    background: rgb(0,212,255);
-    background: linear-gradient(180deg, #00d4ff 0%, rgba(14,86,133,1) 100%);
-    z-index: -1;
+.paralax_container {
+  top: 0;
+  height: 100vh;
+  background-color: #25b1d4;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(180deg, #00d4ff 0%, rgba(14, 86, 133, 1) 100%);
+  z-index: -1;
 }
 
-.paralax_content img{
-    position: absolute;
-    margin-top: 0px;
-    color: white;
-    
-    width: 100%;
-    /* gap: 15px; */
-    object-fit: cover;
-    
-    height: 100vh;
-    /* overflow: hidden; */
+.paralax_content img {
+  position: absolute;
+  margin-top: 0px;
+  color: white;
+
+  width: 100%;
+  /* gap: 15px; */
+  object-fit: cover;
+
+  height: 100vh;
+  /* overflow: hidden; */
 }
 
-.paralax_content .front{
-    overflow: visible;
-
+.paralax_content .front {
+  overflow: visible;
 }
 
-.paralax_title{
-    position: absolute;
-    top: 35vh;
-    /* left: 50%; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* height: 40vh; */
-    
-    /* margin-top: 40vh; */
-    
-    /* box-shadow: 0 0 30px 5px var(--body-color); */
-    /* color: linear-gradient(50deg, #1d80ff 0%, rgba(255,255,255,1) 100%);;
+.paralax_title {
+  position: absolute;
+  top: 35vh;
+  /* left: 50%; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 40vh; */
+
+  /* margin-top: 40vh; */
+
+  /* box-shadow: 0 0 30px 5px var(--body-color); */
+  /* color: linear-gradient(50deg, #1d80ff 0%, rgba(255,255,255,1) 100%);;
     color: red;
     z-index: 10000  ; */
-    background: linear-gradient(50deg, rgba(4,41,103,1) 51%, rgba(255,255,255,1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
+  background: linear-gradient(
+    50deg,
+    rgba(4, 41, 103, 1) 51%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .paralax_title h1 {
-    /* transform: translateX(-50%); */
- font-size: 170px;
- /* z-index: 1; */
+  /* transform: translateX(-50%); */
+  font-size: 170px;
+  /* z-index: 1; */
 }
 
 /* .img {

@@ -19,7 +19,7 @@ function App() {
       {/* <Motion /> */}
       <NavBar />
       <Paralax />
-      <Translator />
+      {/* <Translator /> */}
       <Hero />
       <About />
       <Skills />
