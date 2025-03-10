@@ -1,15 +1,22 @@
 import logo from "../../assets/logo.png";
+import { backInOut, easeOut, motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer_wrapper">
-        <div className="footer_left">
+    <motion.footer>
+      <motion.div
+        initial={{ y: 200, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "anticipate" }}
+        viewport={{ once: true }}
+        className="footer_wrapper"
+      >
+        <motion.div className="footer_left">
           <div className="footer_logo">
             <img src={logo} alt="logo" />
           </div>
-        </div>
-        <div className="footer_right">
+        </motion.div>
+        <motion.div className="footer_right">
           <span>Explore me</span>
           <ul className="footer_list">
             <li>
@@ -25,9 +32,9 @@ const Footer = () => {
               <i className="fa-brands fa-linkedin"></i>
             </li>
           </ul>
-        </div>
-      </div>
-    </footer>
+        </motion.div>
+      </motion.div>
+    </motion.footer>
   );
 };
 

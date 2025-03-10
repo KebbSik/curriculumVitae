@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 interface Props {
   isReversed?: boolean;
@@ -21,7 +21,11 @@ const wrapper = {
 };
 const letters = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { ease: "easeOut", duration: 0.4 },
+  },
 };
 
 const AboutCard = ({ isReversed, image }: Props) => {
@@ -44,13 +48,6 @@ const AboutCard = ({ isReversed, image }: Props) => {
           viewport={{ once: true }}
           className="card_right"
         >
-          {/* <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            ratione et in similique harum ab! Expedita beatae ipsa natus odit
-            fugit ut, harum tempora? Ex ipsum praesentium quisquam non commodi
-            cupiditate consequuntur voluptatibus blanditiis aspernatur modi
-            corrupti, incidunt recusandae optio?
-          </p> */}
           {text.split("").map((char, index) => (
             <motion.text key={index} variants={letters}>
               {/* {char === "" ? "\u00A0" : char} */}

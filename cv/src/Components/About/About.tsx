@@ -13,7 +13,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "anticipate" }}
             viewport={{ once: true }}
           >
             <AboutCard image={wallBurst} />
@@ -21,7 +21,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "anticipate" }}
             viewport={{ once: true }}
           >
             <AboutCard image={apple} isReversed />
@@ -29,7 +29,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "anticipate" }}
             viewport={{ once: true }}
           >
             <AboutCard image={snakeHiss} />
