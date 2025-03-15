@@ -4,26 +4,24 @@
   height: 100vh;
   overflow: hidden;
 }
-
+.gradient_container {
+  /* min-height: 1rem; */
+  width: 100%;
+}
 .absolute_gradient {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100px;
   background: linear-gradient(
     180deg,
     rgba(14, 86, 133, 1) 0%,
-    rgba(252, 176, 69, 0) 65%
+    rgb(0, 0, 0) 100%
   );
   z-index: 9999;
 }
 
 .reversed {
-  bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(3, 111, 193, 0) 7%,
-    rgba(14, 86, 133, 1) 100%
-  );
+  transform: rotate(180deg);
 }
 
 .cave_img {
@@ -142,7 +140,16 @@
   }
 } */
 
+@media (min-width: 1960px) {
+  .cave_img {
+    object-fit: fill;
+  }
+}
+
 @media (max-width: 1279px) {
+  .cave_img {
+    /* object-fit: cover; */
+  }
   .box {
     flex: 0 0 250px;
     height: 350px;

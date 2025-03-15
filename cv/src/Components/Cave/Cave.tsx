@@ -7,6 +7,7 @@ import caveBack from "../../assets/cave_front_2.png";
 import { motion, useTransform, useScroll } from "framer-motion";
 
 import "./Cave.css";
+import Gradient from "./Gradient";
 const Cave = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -31,8 +32,8 @@ const Cave = () => {
 
   return (
     <motion.div className="whole_cave">
-      <div className="absolute_gradient"></div>
-      <div className="absolute_gradient reversed"></div>
+      {/* <div className="absolute_gradient"></div> */}
+      {/* <div className="absolute_gradient reversed"></div> */}
 
       <motion.img
         className="cave_img img_back"
