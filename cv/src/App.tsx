@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Paralax /> */}
+      <Paralax />
 
       <Hero />
       <About />

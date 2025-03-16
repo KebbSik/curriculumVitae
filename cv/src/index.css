@@ -383,9 +383,11 @@ main {
 /* -------------------- About -------------------- */
 .about_wrapper {
   overflow: hidden;
+  /* position: relative; */
 }
 .grid {
   display: grid;
+  /* position: relative; */
 }
 
 /* -------------------- About Card -------------------- */
@@ -526,7 +528,7 @@ main {
 }
 
 .dragField {
-  position: relative;
+  position: relativef;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

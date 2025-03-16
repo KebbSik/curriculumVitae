@@ -10,9 +10,9 @@ import { GiDuration } from "react-icons/gi";
 const Paralax = () => {
   const { scrollYProgress } = useScroll();
 
-  const image1Y = useTransform(scrollYProgress, [0, 2], [0, 1000]);
-  const image2Y = useTransform(scrollYProgress, [0, 1], [0, -1000]);
-  const titleY = useTransform(scrollYProgress, [0, 1], [100, 3000]);
+  const image1Y = useTransform(scrollYProgress, [0, 2], [0, 1200]);
+  // const image2Y = useTransform(scrollYProgress, [0, 1], [0, -1000]);
+  const titleY = useTransform(scrollYProgress, [0, 1], [0, 3000]);
   const titleOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const titleScale = useTransform(scrollYProgress, [0, 0.2], [1, 0.7]);
 
@@ -29,7 +29,7 @@ const Paralax = () => {
         <motion.div
           className="paralax_title_wrapper"
           initial={{ opacity: 0, y: -200 }}
-          whileInView={{ opacity: 1, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 1 }}
           style={{ y: titleY, opacity: titleOpacity, scale: titleScale }}
@@ -37,7 +37,7 @@ const Paralax = () => {
           <motion.img
             src={skydive}
             className="sky_dive"
-            style={{ scale: 0.3, y: -155, rotate: 20, zIndex: -5 }}
+            style={{ scale: 0.3, y: -155, rotate: 20 }}
             animate={{ y: 400, opacity: 0 }}
             transition={{ delay: 2, duration: 1 }}
           />
