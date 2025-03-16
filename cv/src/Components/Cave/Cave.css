@@ -1,31 +1,18 @@
+.overWrapper {
+  height: 100vh;
+  position: relative;
+}
 .whole_cave {
   position: relative;
   width: 100%;
-  height: 100vh;
+  top: 10%;
+  height: 80vh;
   overflow: hidden;
-}
-.gradient_container {
-  /* min-height: 1rem; */
-  width: 100%;
-}
-.absolute_gradient {
-  /* position: absolute; */
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(14, 86, 133, 1) 0%,
-    rgb(0, 0, 0) 100%
-  );
-  z-index: 9999;
-}
-
-.reversed {
-  transform: rotate(180deg);
 }
 
 .cave_img {
   position: absolute;
+  top: 100px;
   margin-top: 0px;
   color: white;
   width: 100%;
@@ -37,12 +24,15 @@
 }
 
 .img_front {
+  position: absolute;
   z-index: 3;
   pointer-events: none; /* Makes sure it does not block interactions */
+  height: 100vh;
 }
 
 .img_back {
-  /* z-index: -20; */
+  height: 100vh;
+  /* top: 100px; */
 }
 /* ------------------------------------------cave buttons  */
 .cave_btn {
@@ -51,7 +41,7 @@
   align-items: center;
   justify-content: center;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -71,11 +61,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
 }
 
 .cave_wrapper {
-  width: 100%;
+  width: 80%;
   /* padding: 50px auto; */
 }
 

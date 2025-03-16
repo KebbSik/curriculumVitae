@@ -20,16 +20,12 @@ function App() {
     <>
       <NavBar />
       <Paralax />
-      {/* <Translator /> */}
 
       <Hero />
       <About />
       <Skills />
-      <Gradient />
       <Cave />
-      <Gradient reversed />
 
-      {/* Last and Footer must stick together */}
       <Last />
       <Footer />
     </>
