@@ -43,72 +43,72 @@ const Cave = () => {
           style={{ y: parallaxEffect }}
         />
 
-        {/* <section className="cave_section">
+        <section className="cave_section">
           <div className="cave_wrapper ">
             <button className="cave_btn left" onClick={() => scrollPrev()}>
-            <i className="fa-solid fa-chevron-left"></i>
+              <i className="fa-solid fa-chevron-left"></i>
             </button>
             <div ref={containerRef} className="cave_container snap_scroller">
-            <motion.div
-            className="box"
-            initial={{ scale: 0, rotate: 180 }}
-            whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
-            >
-              1
-            </motion.div>
-            <motion.div
-              className="box"
-              initial={{ scale: 0, rotate: 180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
-            >
-            2
-            </motion.div>
-            <motion.div
-              className="box"
-              initial={{ scale: 0, rotate: 180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
+              <motion.div
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
               >
-              3
+                1
               </motion.div>
               <motion.div
-              className="box"
-              initial={{ scale: 0, rotate: 180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
               >
-              4
+                2
               </motion.div>
               <motion.div
-              className="box"
-              initial={{ scale: 0, rotate: 180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
               >
-              5
+                3
               </motion.div>
               <motion.div
-              className="box"
-              initial={{ scale: 0, rotate: 180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
-            >
-              6
-            </motion.div>
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                4
+              </motion.div>
+              <motion.div
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                5
+              </motion.div>
+              <motion.div
+                className="box"
+                initial={{ scale: 0, rotate: 180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                6
+              </motion.div>
+            </div>
+            <button className="cave_btn right" onClick={() => scrollNext()}>
+              <i className="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-          <button className="cave_btn right" onClick={() => scrollNext()}>
-          <i className="fa-solid fa-chevron-right"></i>
-          </button>
-          </div>
-        </section> */}
+        </section>
       </motion.div>
       <motion.img
         className="cave_img img_front"

@@ -36,7 +36,7 @@ h1 {
 body {
   /* background-color: var(--body-color); */
   background: var(--body-bacground);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 section {
@@ -478,8 +478,6 @@ main {
 }
 /* -------------------- SkillCard -------------------- */
 .skills h1 {
-  transform: scale(1.3);
-  /* margin-bottom: 15rem; */
 }
 .skillCard_container {
   color: var(--white-color);
@@ -515,44 +513,38 @@ main {
 
 /* -------------------- Skills -------------------- */
 .skills {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  justify-self: center;
+  width: 95vw;
+  /* padding: 10px; */
 }
-/* .wrapper {
-  height: 100vh;
-} */
+
+.wrapper > h1 {
+  font-size: 2rem;
+}
+
 .dragField {
   position: relative;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 /* BreakPoints */
-
+@media (max-width: 1280px) {
+}
 @media (max-width: 992px) {
-  .dragField .swiper .swiper-slide {
-    width: 20rem;
-    height: 20rem;
-    color: #333333;
-  }
 }
 
 @media (max-width: 768px) {
-  .dragField .swiper .swiper-slide {
-    width: 15rem;
-    height: 15rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .dragField .swiper .swiper-slide {
-    width: 10rem;
-    height: 10rem;
-  }
 }
+
 /* -------------------- Last -------------------- */
 .last {
   margin: 0;

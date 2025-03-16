@@ -21,9 +21,7 @@ const Skills = () => {
   return (
     <section className="skills" ref={dragField}>
       <div className="wrapper">
-        <h1 style={{}}>
-          This is couple of my skills. Feel free to check them :)
-        </h1>
+        <h1>This is couple of my skills. Feel free to check them :)</h1>
         <div className="dragField">
           {skillList.map((skill, index) => (
             <motion.div
@@ -41,6 +39,7 @@ const Skills = () => {
               drag
               dragMomentum={false}
               dragConstraints={dragField}
+              dragElastic={0.1}
             >
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
