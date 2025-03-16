@@ -18,10 +18,10 @@ function App() {
 
   return (
     <>
-      {/* <Motion /> */}
       <NavBar />
       <Paralax />
       {/* <Translator /> */}
+
       <Hero />
       <About />
       <Skills />
