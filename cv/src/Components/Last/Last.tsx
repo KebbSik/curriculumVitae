@@ -16,7 +16,13 @@ const Last = () => {
           transition={{ delay: 0.5, duration: 3, ease: "easeOut" }}
           viewport={{ once: true, margin: "0px 2000px 0px 2000px" }}
         >
-          <motion.a href="#" className=" big-btn">
+          <motion.a
+            // href=""
+            className=" big-btn"
+            whileHover={{ boxShadow: "0 0 50px #fff", scale: 1.05 }}
+            whileTap={{ boxShadow: "0 0 25px #fff", rotate: 3, scale: 0.95 }}
+            transition={{ duration: 0 }}
+          >
             Download my CV
           </motion.a>
           <motion.img

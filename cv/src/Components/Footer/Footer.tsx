@@ -1,7 +1,18 @@
+import { SiCalendly } from "react-icons/si";
 import logo from "../../assets/logo.png";
 import { backInOut, easeOut, motion } from "framer-motion";
 
 const Footer = () => {
+  const whileHoverProp = {
+    boxShadow: "0 0 25px 2px #fff",
+    scale: 1.1,
+    transition: { duration: 0 },
+  };
+  const whileTapProp = {
+    boxShadow: "0 0 10px 5px #fff",
+    scale: 0.95,
+    transition: { duration: 0 },
+  };
   return (
     <motion.footer>
       <motion.div
@@ -19,18 +30,18 @@ const Footer = () => {
         <motion.div className="footer_right">
           <span>Explore me</span>
           <ul className="footer_list">
-            <li>
+            <motion.li whileTap={whileTapProp} whileHover={whileHoverProp}>
               <i className="fa-brands fa-facebook"></i>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileTap={whileTapProp} whileHover={whileHoverProp}>
               <i className="fa-brands fa-instagram"></i>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileTap={whileTapProp} whileHover={whileHoverProp}>
               <i className="fa-brands fa-github"></i>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileTap={whileTapProp} whileHover={whileHoverProp}>
               <i className="fa-brands fa-linkedin"></i>
-            </li>
+            </motion.li>
           </ul>
         </motion.div>
       </motion.div>
