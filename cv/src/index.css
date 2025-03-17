@@ -405,6 +405,8 @@ main {
 
 .about_card {
   margin-bottom: 10rem;
+  /* display: flex;
+  justify-content: center; */
 }
 .about_container {
   display: flex;
@@ -422,16 +424,20 @@ main {
 /* .card_left, */
 .card_right {
   margin: 0 1%;
-  width: 35rem;
-  height: 25rem;
+  width: 50%;
+  height: auto;
+  max-width: 35rem;
+  max-height: 25rem;
   background-color: white;
   border-radius: 50px;
 }
 
 .card_left {
   /* border: 5px solid var(--accent-color); */
-  width: 28rem;
+  width: 50%;
   height: 20rem;
+  max-width: 28rem;
+  max-height: 20rem;
   /* margin: 0 auto; */
   display: flex;
   align-items: center;
@@ -466,8 +472,8 @@ main {
 
   .card_left,
   .card_right {
-    width: 28rem;
-    height: 20rem;
+    /* width: 28rem;
+    height: 20rem; */
     margin: 0 2%;
   }
   .about_card {
@@ -483,10 +489,30 @@ main {
     position: absolute;
     opacity: 0.2;
     z-index: -1;
+    /* width: 70%; */
+    width: auto;
+    max-width: 50%;
+    min-width: 20rem;
   }
   .card_right {
     background: rgba(255, 255, 255, 0.1);
     /* background: rgba(18, 15, 15, 0.1); */
+    width: 100%;
+    max-width: 80%;
+    /* max-height: ; */
+    height: 20rem;
+  }
+
+  @media (max-width: 480px) {
+    .card_left {
+      max-width: 80%;
+    }
+    .card_right {
+      /* height: 50%; */
+      width: 100%;
+      max-width: 100%;
+      padding: 1rem 2rem;
+    }
   }
 }
 /* -------------------- SkillCard -------------------- */

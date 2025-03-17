@@ -37,20 +37,17 @@ const AboutCard = ({ isReversed, image }: Props) => {
         }
       >
         <div className="card_left">
-          {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
           <img src={image ? image : "https://placehold.co/600x400"} />
         </div>
         <motion.div
           variants={wrapper}
           initial="hidden"
-          // animate="visible"
           whileInView="visible"
           viewport={{ once: true }}
           className="card_right"
         >
           {text.split("").map((char, index) => (
             <motion.text key={index} variants={letters}>
-              {/* {char === "" ? "\u00A0" : char} */}
               {char}
             </motion.text>
           ))}
