@@ -3,8 +3,6 @@ import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
 
-// max height of navbar - 85px
-
 const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const whileTapProp = { scale: 0.95, rotate: -2, transition: { duration: 0 } };
