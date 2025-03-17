@@ -21,7 +21,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "anticipate" }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
             <AboutCard image={apple} isReversed />

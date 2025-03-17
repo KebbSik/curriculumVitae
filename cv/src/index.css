@@ -49,7 +49,7 @@ section {
 section > *:first-child {
   /* border: 1px solid red; */
   margin: 200px 0px;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 /* -------------------- NavBar -------------------- */
@@ -394,6 +394,7 @@ main {
 /* -------------------- About -------------------- */
 .about_wrapper {
   overflow: hidden;
+  padding: 0;
   /* position: relative; */
 }
 .grid {
@@ -462,6 +463,12 @@ main {
   object-fit: cover;
 }
 
+.card_left:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* ---------------------------------Breakinpoints */
 @media (max-width: 1280px) {
   .card_reverse {
     /* margin-left: 0; */
@@ -493,6 +500,7 @@ main {
     width: auto;
     max-width: 50%;
     min-width: 20rem;
+    pointer-events: none;
   }
   .card_right {
     background: rgba(255, 255, 255, 0.1);
@@ -501,6 +509,11 @@ main {
     max-width: 80%;
     /* max-height: ; */
     height: 20rem;
+  }
+  .card_left:hover {
+    transform: none;
+    transition: all 0.3s ease-in-out;
+    cursor: auto;
   }
 
   @media (max-width: 480px) {

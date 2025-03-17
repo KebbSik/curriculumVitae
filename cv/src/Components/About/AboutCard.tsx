@@ -16,15 +16,14 @@ const wrapper = {
   hidden: { opacity: 1, color: "#ffffff" },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.01 },
+    transition: { staggerChildren: 0.02 },
   },
 };
 const letters = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    y: 0,
-    transition: { ease: "easeOut", duration: 0.4 },
+    transition: { ease: "backInOut", duration: 0.4 },
   },
 };
 
@@ -37,7 +36,17 @@ const AboutCard = ({ isReversed, image }: Props) => {
         }
       >
         <div className="card_left">
-          <img src={image ? image : "https://placehold.co/600x400"} />
+          <motion.img
+            drag
+            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+            dragElastic={0.05}
+            dragTransition={{
+              bounceStiffness: 200,
+              bounceDamping: 7,
+            }}
+            // viewport={{margin:""}}
+            src={image ? image : "https://placehold.co/600x400"}
+          />
         </div>
         <motion.div
           variants={wrapper}
