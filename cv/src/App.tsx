@@ -24,7 +24,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Cave />
+      {/* <Cave /> */}
 
       <Last />
       <Footer />

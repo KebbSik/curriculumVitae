@@ -669,15 +669,22 @@ main {
 
   z-index: 20;
 }
-.hole {
-  /* z-index: 2s; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  top: 8rem;
-  left: 42rem;
+
+@media (max-width: 768px) {
+  .big-btn {
+    font-size: 2.7rem;
+  }
+  .moto_bike {
+    margin-left: -40px;
+  }
 }
-/* -------------------- Foo`er -------------------- */
+
+@media (max-width: 768px) {
+  .thumbs {
+    /* align-self: center; */
+  }
+}
+/* -------------------- Footer -------------------- */
 footer {
   background-color: var(--secondary-color);
   overflow: hidden;

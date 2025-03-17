@@ -11,7 +11,8 @@ const Last = () => {
       <div className="last_container">
         <motion.div
           className="bikeElements"
-          initial={{ x: -1500 }}
+          // initial={{ x: -1500 }}
+          initial={{ x: "-100%" }}
           whileInView={{ x: 0 }}
           transition={{ delay: 0.5, duration: 3, ease: "easeOut" }}
           viewport={{ once: true, margin: "0px 2000px 0px 2000px" }}
@@ -29,18 +30,19 @@ const Last = () => {
             className="moto_bike"
             src={bike}
             alt="motobikeDriver"
-            style={{ scale: 0.3, y: -280, x: 280 }}
+            style={{ scale: 0.3, y: -260, x: 270 }}
             whileInView={{ x: 1500 }}
-            transition={{ delay: 3.5, duration: 3 }}
-            viewport={{ once: true }}
+            // whileInView={{ x: [270, 280, 1500], zIndex: 10 }}
+            transition={{ delay: 3.5, duration: 2, ease: "backIn" }}
+            viewport={{ once: true, margin: "0px 2000px" }}
           />
           <motion.img
-            style={{ scale: 0.15, x: -130, y: -345, zIndex: 1 }}
+            style={{ scale: 0.15, x: -90, y: -345, zIndex: 1 }}
             className="thumbs"
             src={thumbs}
             alt="#"
             whileInView={{ y: -455 }}
-            transition={{ duration: 0.3, delay: 5 }}
+            transition={{ duration: 0.3, delay: 4.5 }}
             viewport={{ once: true }}
           />
         </motion.div>
