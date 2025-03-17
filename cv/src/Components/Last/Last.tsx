@@ -42,7 +42,7 @@ const Last = () => {
             src={thumbs}
             alt="#"
             whileInView={{ y: -455 }}
-            transition={{ duration: 0.3, delay: 4.5 }}
+            transition={{ duration: 0.4, delay: 5 }}
             viewport={{ once: true }}
           />
         </motion.div>

@@ -23,6 +23,11 @@
   overflow-x: hidden;
 }
 
+.hand_pointer {
+  width: 80vh;
+  bottom: 15%;
+}
+
 .paralax_content .sky_dive,
 .paralax_content .hand_pointer {
   position: absolute;
@@ -47,6 +52,12 @@
 }
 
 .paralax_title_wrapper .tittle {
-  font-size: 170px;
+  font-size: 160px;
+
+  /* overflow: visible; */
   /* z-index: 67; */
 }
+/* 
+.inner_wrapper {
+  position: relative;
+} */
