@@ -44,7 +44,7 @@ const AboutCard = ({ isReversed, image }: Props) => {
               bounceStiffness: 200,
               bounceDamping: 7,
             }}
-            // viewport={{margin:""}}
+            whileTap={{ cursor: "grabbing" }}
             src={image ? image : "https://placehold.co/600x400"}
           />
         </div>

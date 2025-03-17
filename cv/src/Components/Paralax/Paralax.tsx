@@ -5,7 +5,6 @@ import image2 from "../../assets/Image2c.png";
 import { motion, useTransform, useScroll } from "framer-motion";
 import skydive from "../../assets/stickers/skydive.png";
 import hand_pointer from "../../assets/stickers/hand_pointer.png";
-import { GiDuration } from "react-icons/gi";
 
 const Paralax = () => {
   const { scrollYProgress } = useScroll();
@@ -38,7 +37,7 @@ const Paralax = () => {
             src={skydive}
             className="sky_dive"
             style={{ scale: 0.3, y: -155, rotate: 20 }}
-            animate={{ y: 400, opacity: [1, 1, 1, 0] }}
+            animate={{ y: 400, opacity: [1, 1, 1, 0], rotate: -270 }}
             transition={{ delay: 2, duration: 1 }}
           />
           <h1 className="tittle">Welcome</h1>

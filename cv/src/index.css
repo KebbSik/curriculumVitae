@@ -443,6 +443,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .card_right {
@@ -465,8 +466,7 @@ main {
 
 .card_left:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: grab;
 }
 /* ---------------------------------Breakinpoints */
 @media (max-width: 1280px) {
@@ -512,7 +512,7 @@ main {
   }
   .card_left:hover {
     transform: none;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: auto;
   }
 
