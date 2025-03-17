@@ -38,7 +38,7 @@ const Paralax = () => {
             src={skydive}
             className="sky_dive"
             style={{ scale: 0.3, y: -155, rotate: 20 }}
-            animate={{ y: 400, opacity: 0 }}
+            animate={{ y: 400, opacity: [1, 1, 1, 0] }}
             transition={{ delay: 2, duration: 1 }}
           />
           <h1 className="tittle">Welcome</h1>
