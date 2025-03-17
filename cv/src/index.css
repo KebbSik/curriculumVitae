@@ -37,6 +37,8 @@ body {
   /* background-color: var(--body-color); */
   background: var(--body-bacground);
   /* overflow-x: hidden; */
+  position: relative;
+  /* overflow-y: hidden; */
 }
 
 section {
