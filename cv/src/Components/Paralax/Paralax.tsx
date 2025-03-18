@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Paralax.css";
 import image1 from "../../assets/Image1b.png";
 import image2 from "../../assets/Image2c.png";
@@ -55,6 +55,12 @@ const Paralax = () => {
         : "10rem"
       : "12rem",
   };
+  const [firstLoad, setFirstLooad] = useState(true);
+
+  useEffect(() => {
+    setFirstLooad(false);
+  }, []);
+
   return (
     <div className="paralax_container">
       <motion.div className="paralax_content">
@@ -109,7 +115,10 @@ const Paralax = () => {
             y: max1280 ? (max992 ? "5%" : "0%") : 0,
             rotate: max992 ? 0 : -20,
           }}
-          // transition={{ delay: 2.5, duration: 1 }}
+          transition={{
+            delay: firstLoad ? 2.5 : 0,
+            duration: firstLoad ? 1 : 0.5,
+          }}
         />
         <motion.img className="background" src={image2} alt="parallax front" />
       </motion.div>
