@@ -1,5 +1,4 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { useState } from "react";
 import waterDrops from "../src/assets/water_drops.png";
 import "../src/Components/Cave/Cave.css";
 import "./App.css";

@@ -2,10 +2,10 @@ interface Props {
   percent: number;
   skillName: string;
   color: string;
-  img?: string;
+  // img?: string;
 }
 
-const SkillCard = ({ percent, skillName, color, img }: Props) => {
+const SkillCard = ({ percent, skillName, color }: Props) => {
   return (
     <div
       className="skillCard_container"
