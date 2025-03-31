@@ -13,7 +13,7 @@ import Paralax from "./Components/Paralax/Paralax";
 import Skills from "./Components/Skills/Skills";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   const { scrollYProgress } = useScroll();
   const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "62%"]);
