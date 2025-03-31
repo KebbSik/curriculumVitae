@@ -96,3 +96,8 @@ powinien szybciej się kończyć (byc przezroczysty)
 stroke line animatio throug "about section", it makes 
 page look whole 
 https://www.youtube.com/watch?v=RGWXVbkrYKM&ab_channel=CodexCommunity
+
+
+
+gitHUb deploy manual 
+https://www.youtube.com/watch?v=hn1IkJk24ow&ab_channel=PedroTech
