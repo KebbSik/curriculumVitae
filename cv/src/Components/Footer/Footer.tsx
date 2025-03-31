@@ -1,6 +1,5 @@
-import { SiCalendly } from "react-icons/si";
+import { motion } from "framer-motion";
 import logo from "../../assets/logo.png";
-import { backInOut, easeOut, motion } from "framer-motion";
 
 const Footer = () => {
   const whileHoverProp = {

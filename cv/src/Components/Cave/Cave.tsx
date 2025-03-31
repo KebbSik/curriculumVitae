@@ -3,11 +3,9 @@ import { useRef } from "react";
 // import cave2 from "../../assets/cave2.jpg";
 // import caveFront from "../../assets/cave_back_2.jpeg";
 import caveFront from "../../assets/cave_back_3.png";
-import caveBack from "../../assets/cave_front_2.png";
 import stones from "../../assets/stones.png";
-import lotus from "../../assets/stickers/lotus_pose.png";
 
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import "./Cave.css";
 

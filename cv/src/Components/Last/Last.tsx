@@ -1,9 +1,7 @@
-import { section } from "motion/react-client";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import bike from "../../assets/stickers/motorbike.png";
 import thumbs from "../../assets/stickers/thumbs.png";
-import hole from "../../assets/stickers/hole.png";
 
 const Last = () => {
   return (

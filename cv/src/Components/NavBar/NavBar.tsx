@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
+import logo from "../../assets/logo.png";
 
 const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);

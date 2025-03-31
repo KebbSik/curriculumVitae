@@ -1,10 +1,6 @@
-import profilePhoto from "../../assets/profilePhoto.jpg";
+import { motion } from "framer-motion";
 import portrait from "../../assets/stickers/portrait.png";
-import icon1 from "../../assets/backendIcon.png";
-import icon2 from "../../assets/stepIcon.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
-import { delay, easeIn, easeOut, motion } from "framer-motion";
-import { GiDuration } from "react-icons/gi";
 
 const Hero = () => {
   const whileTapProp = {

@@ -1,6 +1,5 @@
-import React from "react";
-import "./Motion.css";
 import { motion } from "motion/react";
+import "./Motion.css";
 
 const Motion = () => {
   return (

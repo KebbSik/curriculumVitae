@@ -1,19 +1,16 @@
-import { useState } from "react";
-import "./App.css";
-import "../src/Components/Cave/Cave.css";
-import NavBar from "./Components/NavBar/NavBar";
-import Hero from "./Components/Hero/Hero";
-import Paralax from "./Components/Paralax/Paralax";
-import Footer from "./Components/Footer/Footer";
-import Last from "./Components/Last/Last";
-import Skills from "./Components/Skills/Skills";
-import About from "./Components/About/About";
-import Translator from "./Components/ColorTranslator/Translator";
-import Cave from "./Components/Cave/Cave";
-import Motion from "./Components/Motion/Motion";
-import Gradient from "./Components/Cave/Gradient";
 import { motion, useScroll, useTransform } from "motion/react";
+import { useState } from "react";
 import waterDrops from "../src/assets/water_drops.png";
+import "../src/Components/Cave/Cave.css";
+import "./App.css";
+import About from "./Components/About/About";
+import Cave from "./Components/Cave/Cave";
+import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
+import Last from "./Components/Last/Last";
+import NavBar from "./Components/NavBar/NavBar";
+import Paralax from "./Components/Paralax/Paralax";
+import Skills from "./Components/Skills/Skills";
 
 function App() {
   const [count, setCount] = useState(0);

@@ -1,9 +1,8 @@
-import React from "react";
-import AboutCard from "./AboutCard";
-import wallBurst from "../../assets/stickers/wall_burst.png";
+import { motion } from "framer-motion";
 import apple from "../../assets/stickers/apple.png";
 import snakeHiss from "../../assets/stickers/snake_hiss.png";
-import { motion } from "framer-motion";
+import wallBurst from "../../assets/stickers/wall_burst.png";
+import AboutCard from "./AboutCard";
 
 const About = () => {
   return (

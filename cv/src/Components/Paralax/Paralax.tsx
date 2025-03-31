@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./Paralax.css";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import image1 from "../../assets/Image1b.png";
 import image2 from "../../assets/Image2c.png";
-import { motion, useTransform, useScroll } from "framer-motion";
-import skydive from "../../assets/stickers/skydive.png";
 import hand_pointer from "../../assets/stickers/hand_pointer.png";
-import { useMediaQuery } from "react-responsive";
+import skydive from "../../assets/stickers/skydive.png";
+import "./Paralax.css";
 
 const Paralax = () => {
   const { scrollYProgress } = useScroll();

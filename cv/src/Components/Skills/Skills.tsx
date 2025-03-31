@@ -1,8 +1,8 @@
 import "swiper/swiper-bundle.css";
 
-import SkillCard from "./SkillCard";
 import { motion } from "motion/react";
 import { useRef } from "react";
+import SkillCard from "./SkillCard";
 
 const Skills = () => {
   const skillList = [
