@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import logo from "../../assets/logo.png";
-import { HiDatabase } from "react-icons/hi";
 
 const Footer = () => {
   const whileHoverProp = {
