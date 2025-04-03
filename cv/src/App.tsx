@@ -15,14 +15,14 @@ function App() {
   // const [count, setCount] = useState(0);
 
   const { scrollYProgress } = useScroll();
-  const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "62%"]);
+  const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "30%"]);
   return (
     <>
       <motion.div
         className="drops_wrapper"
         style={{
           position: "absolute",
-          height: "60%",
+          height: "75%",
           width: "100%",
           y: backGroundY,
           backgroundImage: `url(${waterDrops})`,

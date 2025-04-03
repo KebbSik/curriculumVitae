@@ -1,8 +1,7 @@
 import { useRef } from "react";
-// import cave1 from "../../assets/cave1.png";
-// import cave2 from "../../assets/cave2.jpg";
-// import caveFront from "../../assets/cave_back_2.jpeg";
+
 import caveFront from "../../assets/cave_back_3.png";
+// import caveFront from "../../assets/cave_back_3.svg";
 import stones from "../../assets/stones.png";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -38,7 +37,7 @@ const Cave = () => {
           className="cave_img img_back"
           src={caveFront}
           alt=""
-          style={{ y: parallaxEffect }}
+          style={{ y: parallaxEffect, position: "absolute" }}
         />
 
         <section className="cave_section">
@@ -47,60 +46,36 @@ const Cave = () => {
               <i className="fa-solid fa-chevron-left"></i>
             </button>
             <div ref={containerRef} className="cave_container snap_scroller">
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
+              <div
+                style={{
+                  zIndex: 1,
+                  height: 100,
+                  width: 300,
+                  backgroundColor: "white",
+                }}
               >
-                1
-              </motion.div>
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
+                soon!
+              </div>
+              <div
+                style={{
+                  zIndex: 1,
+                  height: 100,
+                  width: 300,
+                  backgroundColor: "white",
+                }}
               >
-                2
-              </motion.div>
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
+                soon!
+              </div>
+              <div
+                style={{
+                  zIndex: 1,
+                  height: 100,
+                  width: 300,
+                  backgroundColor: "white",
+                }}
               >
-                3
-              </motion.div>
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
-              >
-                4
-              </motion.div>
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
-              >
-                5
-              </motion.div>
-              <motion.div
-                className="box"
-                initial={{ scale: 0, rotate: 180 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
-                viewport={{ once: true }}
-              >
-                6
-              </motion.div>
+                soon!
+              </div>
             </div>
             <button className="cave_btn right" onClick={() => scrollNext()}>
               <i className="fa-solid fa-chevron-right"></i>
@@ -110,12 +85,10 @@ const Cave = () => {
       </motion.div>
       <motion.img
         className="cave_img img_front"
-        // src={caveBack}
         src={stones}
         alt=""
         initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
-        // transition={{ duration: 0.5, delay: 1.5 }}
       />
     </div>
   );

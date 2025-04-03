@@ -381,7 +381,7 @@ main {
   }
   .left {
     text-align: center;
-    transform: scale(1.15);
+    /* transform: scale(1.15); */
   }
   .btns {
     flex-wrap: wrap;

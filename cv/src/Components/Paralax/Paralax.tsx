@@ -74,9 +74,9 @@ const Paralax = () => {
         <motion.div
           className="paralax_title_wrapper"
           initial={{ opacity: 0, y: -200 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 1 }}
+          animate={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true }}
+          transition={{ delay: 0.8, duration: 1 }}
           style={{
             y: titleY,
             opacity: titleOpacity,
@@ -88,7 +88,7 @@ const Paralax = () => {
             className="sky_dive"
             style={{ scale: skyDiveStyle.scale, y: skyDiveStyle.y, rotate: 20 }}
             animate={{ y: 400, opacity: [1, 1, 1, 0], rotate: -360 }}
-            transition={{ delay: 2, duration: 1 }}
+            transition={{ delay: 2.5, duration: 1 }}
           />
           <h1 className="tittle" style={tittleStyle}>
             Welcome
@@ -116,7 +116,7 @@ const Paralax = () => {
             rotate: max992 ? 0 : -20,
           }}
           transition={{
-            delay: firstLoad ? 2.5 : 0,
+            delay: firstLoad ? 3 : 0,
             duration: firstLoad ? 1 : 0.5,
           }}
         />
