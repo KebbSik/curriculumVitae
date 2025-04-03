@@ -10,7 +10,6 @@ import Last from "./Components/Last/Last";
 import NavBar from "./Components/NavBar/NavBar";
 import Paralax from "./Components/Paralax/Paralax";
 import Skills from "./Components/Skills/Skills";
-import PreventScrollBottom from "./Components/PreventScrollBottom";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -19,7 +18,6 @@ function App() {
   const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "30%"]);
   return (
     <>
-      <PreventScrollBottom />
       <motion.div
         className="drops_wrapper"
         style={{
