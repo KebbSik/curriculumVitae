@@ -18,28 +18,31 @@ function App() {
   const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "30%"]);
   return (
     <>
-      <motion.div
-        className="drops_wrapper"
-        style={{
-          position: "absolute",
-          height: "75%",
-          width: "100%",
-          y: backGroundY,
-          backgroundImage: `url(${waterDrops})`,
-          backgroundSize: "cover",
-          opacity: 0.2,
-          zIndex: -1,
-          // overflow: "hidden",
-        }}
-      ></motion.div>
-      <NavBar />
-      <Paralax />
-      <Hero />
-      <About />
-      <Skills />
-      <Cave />
-      <Last />
-      <Footer />
+      <div>
+        {/* style={{ width: 100, height: "100vh" }} */}
+        <motion.div
+          className="drops_wrapper"
+          style={{
+            position: "absolute",
+            height: "75%",
+            width: "100%",
+            y: backGroundY,
+            backgroundImage: `url(${waterDrops})`,
+            backgroundSize: "cover",
+            opacity: 0.2,
+            zIndex: -1,
+            // overflow: "hidden",
+          }}
+        ></motion.div>
+        <NavBar />
+        <Paralax />
+        <Hero />
+        <About />
+        <Skills />
+        <Cave />
+        <Last />
+        <Footer />
+      </div>
     </>
   );
 }
