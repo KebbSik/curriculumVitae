@@ -32,19 +32,13 @@ h1 {
   font-size: 2rem;
   margin-bottom: 50px;
 }
-html {
-  background: var(--body-bacground);
-}
+
 body {
   /* background-color: var(--body-color); */
   background: var(--body-bacground);
   /* overflow-x: hidden; */
   position: relative;
   /* overflow-y: hidden; */
-  overscroll-behavior: contain; /* Prevents the overscroll bounce effect */
-  /* margin: 0; */
-  /* padding: 0; */
-  min-height: 100vh;
 }
 
 section {
@@ -712,6 +706,9 @@ footer {
   overflow: hidden;
 }
 
+.overScroll {
+  background-color: var(--secondary-color);
+}
 .footer_wrapper {
   display: flex;
   justify-content: space-between;
