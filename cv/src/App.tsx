@@ -18,7 +18,7 @@ function App() {
   const backGroundY = useTransform(scrollYProgress, [0, 1], ["10%", "30%"]);
   return (
     <>
-      {/* <motion.div
+      <motion.div
         className="drops_wrapper"
         style={{
           position: "absolute",
@@ -39,7 +39,7 @@ function App() {
       <Skills />
       <Cave />
       <Last />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
