@@ -1,7 +1,5 @@
 import "swiper/swiper-bundle.css";
 
-import { motion } from "motion/react";
-import { useRef } from "react";
 import SkillCard from "./SkillCard";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";

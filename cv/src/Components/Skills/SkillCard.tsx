@@ -1,4 +1,4 @@
-import { delay, motion, useAnimation, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { IconType } from "react-icons";
 import { useMediaQuery } from "react-responsive";
@@ -20,7 +20,7 @@ const outterDelay = 0.5;
 
 const SkillCard = ({ percent, skillName, color, icon: Icon }: Props) => {
   const max768 = useMediaQuery({ query: "(max-width: 768px)" });
-  const max480 = useMediaQuery({ query: "(max-width: 480px)" });
+  // const max480 = useMediaQuery({ query: "(max-width: 480px)" });
 
   const [percentVal, setPercentVal] = useState(0);
 
@@ -32,6 +32,9 @@ const SkillCard = ({ percent, skillName, color, icon: Icon }: Props) => {
   });
 
   useEffect(() => {
+    if (color) {
+      console.log(color);
+    }
     if (isInView) {
       let start: number | null = null;
       const animate = (timestamp: number) => {
