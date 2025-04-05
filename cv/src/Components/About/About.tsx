@@ -10,6 +10,7 @@ const About = () => {
       <div className="about_wrapper">
         <div className="grid">
           <motion.div
+            className="about_Card"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "anticipate" }}
@@ -18,6 +19,7 @@ const About = () => {
             <AboutCard image={wallBurst} />
           </motion.div>
           <motion.div
+            className="about_Card"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -26,6 +28,7 @@ const About = () => {
             <AboutCard image={apple} isReversed />
           </motion.div>
           <motion.div
+            className="about_Card"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "anticipate" }}

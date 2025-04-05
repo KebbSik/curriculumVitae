@@ -42,14 +42,14 @@ body {
 }
 
 section {
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   margin: 50px 0;
 
   /* width: 100%; */
 }
 
 section > *:first-child {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 200px 0px;
   padding: 40px 20px;
 }
@@ -399,12 +399,18 @@ main {
   overflow: hidden;
   padding: 0;
   /* position: relative; */
+  display: flex;
+  justify-content: center;
 }
 .grid {
+  width: 100%;
+  max-width: 2000px;
   display: grid;
   /* position: relative; */
 }
-
+.about_Card {
+  max-width: 2000px;
+}
 /* -------------------- About Card -------------------- */
 
 .about_card {
@@ -532,27 +538,73 @@ main {
   }
 }
 /* -------------------- SkillCard -------------------- */
-.skills h1 {
-}
+
 .skillCard_container {
+  border: 1px solid lightgreen;
   color: var(--white-color);
-  border-radius: 10px;
-  min-height: 10rem;
+
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+
+  /* min-height: 10rem;
+  max-width: 50rem; */
 }
 
 .skillCard_container .card {
   width: 100%;
+  max-width: 1200px;
 
-  height: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
+  /* 
+  display: flex;
+  align-items: center;
+  font-weight: bold; */
+  /* justify-content: space-between; */
+  display: grid;
+  justify-content: space-around;
+  grid-auto-flow: column;
+  /* grid-template-columns: (10rem, auto, auto); */
+  gap: auto;
+}
+.skill_icon {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  /* width: 10rem; */
+}
+.percent {
+  font-size: 1.5rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
-.skillCard_container .card .percent sup {
-  transform: translateY(-10px);
+.percent > .percent_digit {
+  transform: translateY(5px);
+}
+
+.skill_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
+  width: 10rem;
+}
+
+.card > * {
+  border: 1px solid orange;
+}
+
+.svg_lines_wrapper > * {
+  position: absolute;
+
+  left: 0;
+}
+.skillCard_container .card .percent sup {
+  /* transform: transslateY(-30px); */
 }
 
 @media (min-width: 993px) {
@@ -569,24 +621,27 @@ main {
 
 /* -------------------- Skills -------------------- */
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-self: center;
-  width: 95vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* justify-self: center; */
+  width: 100%;
+
   /* padding: 10px; */
 }
 
 .wrapper > h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 7rem;
 }
 
-.dragField {
-  position: relativef;
+.wrapper {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
+  align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 /* BreakPoints */
