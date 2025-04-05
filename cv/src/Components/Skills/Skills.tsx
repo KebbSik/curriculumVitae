@@ -40,6 +40,7 @@ const Skills = () => {
         <h1>This is couple of my skills. Feel free to check them :)</h1>
         {skillList.map((skill, index) => (
           <SkillCard
+            key={index}
             skillName={skill.skillName}
             percent={skill.percent}
             color={skill.color}
