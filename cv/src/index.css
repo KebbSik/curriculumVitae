@@ -2,7 +2,7 @@
 /* -------------------- Global -------------------- */
 :root {
   /* color variant */
-  --body-color: #0370c2;
+  --body-color: rgb(3, 112, 194);
   /* gradient variant */
   --body-bacground: linear-gradient(
     180deg,
