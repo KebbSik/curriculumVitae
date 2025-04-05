@@ -540,7 +540,7 @@ main {
 /* -------------------- SkillCard -------------------- */
 
 .skillCard_container {
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
   color: var(--white-color);
   margin-bottom: 3rem;
   padding: 50px;
