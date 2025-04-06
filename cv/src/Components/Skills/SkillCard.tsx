@@ -27,7 +27,7 @@ const SkillCard = ({ percent, skillName, color, icon: Icon }: Props) => {
   // const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    margin: " -150px 0px 0px 0px",
+    margin: " -175px 0px 0px 0px",
     once: true,
   });
 
