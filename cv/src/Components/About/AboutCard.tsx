@@ -6,11 +6,11 @@ interface Props {
   content: string;
 }
 
-const text = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            ratione et in similique harum ab! Expedita beatae ipsa natus odit
-            fugit ut, harum tempora? Ex ipsum praesentium quisquam non commodi
-            cupiditate consequuntur voluptatibus blanditiis aspernatur modi
-            corrupti, incidunt recusandae optio?`;
+// const text = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+//             ratione et in similique harum ab! Expedita beatae ipsa natus odit
+//             fugit ut, harum tempora? Ex ipsum praesentium quisquam non commodi
+//             cupiditate consequuntur voluptatibus blanditiis aspernatur modi
+//             corrupti, incidunt recusandae optio?`;
 
 const wrapper = {
   hidden: { opacity: 1, color: "#ffffff" },

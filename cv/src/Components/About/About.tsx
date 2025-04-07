@@ -4,11 +4,11 @@ import snakeHiss from "../../assets/stickers/snake_hiss.png";
 import wallBurst from "../../assets/stickers/wall_burst.png";
 import AboutCard from "./AboutCard";
 
-const descriptionsArrPL = [
-  "Jestem początkującym programistą, który pełen pasji podchodzi do wyzwań. Na co dzień uczę się i tworzę aplikacje internetowe, starając się nieustannie rozwijać swoje umiejętności. Z każdym nowym projektem poszerzam swoją wiedzę o technologie, takie jak JavaScript, React, TypeScript, i wiele innych.",
-  "Podczas tworzenia szczególną uwagę poświęcam na kreatywność, ponieważ wierzę, że aplikacje nie tylko muszą działać, ale także przyciągać uwagę użytkownika. Staram się, aby moje projekty były nie tylko funkcjonalne, ale także wyjątkowe i wciągające. Zawsze dążę do tego, by wyróżniały się niepowtarzalnym stylem, ciekawe rozwiązania wizualne i przemyślane interakcje.",
-  "Stworzyłem interaktywne portfolio, aby lepiej prezentować swoje pomysły. Zachęcam Cię do zapoznania się z nim i chętnie poznam Twoją opinię - zarówno dobrą, jak i konstruktywną. Możesz się ze mną skontaktować przez LinkedIn. :)",
-];
+// const descriptionsArrPL = [
+//   "Jestem początkującym programistą, który pełen pasji podchodzi do wyzwań. Na co dzień uczę się i tworzę aplikacje internetowe, starając się nieustannie rozwijać swoje umiejętności. Z każdym nowym projektem poszerzam swoją wiedzę o technologie, takie jak JavaScript, React, TypeScript, i wiele innych.",
+//   "Podczas tworzenia szczególną uwagę poświęcam na kreatywność, ponieważ wierzę, że aplikacje nie tylko muszą działać, ale także przyciągać uwagę użytkownika. Staram się, aby moje projekty były nie tylko funkcjonalne, ale także wyjątkowe i wciągające. Zawsze dążę do tego, by wyróżniały się niepowtarzalnym stylem, ciekawe rozwiązania wizualne i przemyślane interakcje.",
+//   "Stworzyłem interaktywne portfolio, aby lepiej prezentować swoje pomysły. Zachęcam Cię do zapoznania się z nim i chętnie poznam Twoją opinię - zarówno dobrą, jak i konstruktywną. Możesz się ze mną skontaktować przez LinkedIn. :)",
+// ];
 
 const descriptionsArr = [
   "I am a beginner programmer who approaches challenges with passion. On a daily basis, I learn and create web applications, constantly working on developing my skills. By creating new project, I expand my knowledge of technologies such as JavaScript, React, TypeScript, and many others.",

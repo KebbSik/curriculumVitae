@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import caveFront from "../../assets/cave_back_3.png";
 // import caveFront from "../../assets/cave_back_3.svg";

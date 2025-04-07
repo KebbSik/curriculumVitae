@@ -4,6 +4,12 @@ import bike from "../../assets/stickers/motorbike.png";
 import thumbs from "../../assets/stickers/thumbs.png";
 
 const Last = () => {
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = thumbs;
+    link.download = "thumbs.png";
+    link.click();
+  };
   return (
     <section className="last">
       <div className="last_container">
@@ -21,6 +27,7 @@ const Last = () => {
             whileHover={{ boxShadow: "0 0 50px #fff", scale: 1.05 }}
             whileTap={{ boxShadow: "0 0 25px #fff", rotate: 3, scale: 0.95 }}
             transition={{ duration: 0 }}
+            onClick={downloadCV}
           >
             Download my CV
           </motion.a>

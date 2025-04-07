@@ -1,4 +1,4 @@
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import portrait from "../../assets/stickers/portrait.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
 
@@ -10,6 +10,12 @@ const Hero = () => {
   };
   const whileHoverProp = { scale: 1.2, transition: { delay: 0, duration: 0 } };
 
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = portrait;
+    link.download = "portrait.png";
+    link.click();
+  };
   return (
     // <main>
     <section>
@@ -46,6 +52,7 @@ const Hero = () => {
                 className="download-btn"
                 whileTap={whileTapProp}
                 whileHover={whileHoverProp}
+                onClick={downloadCV}
               >
                 Download CV
               </motion.a>
