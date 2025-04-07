@@ -49,6 +49,7 @@ const Hero = () => {
               >
                 Download CV
               </motion.a>
+
               <motion.a
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{

@@ -70,18 +70,13 @@
 
   /* padding: 50px auto; */
 }
-
 .cave_container {
   /* min-height: 600px; */
-
+  /* justify-content: space-around; */
   display: flex;
-  /* align-items: center; */
-  justify-content: space-around;
   gap: 3rem;
   overflow-x: scroll;
-
   padding: 1rem auto;
-  /* transform: translateY(-10%); */
 }
 
 .cave_container :nth-child(3n) {
@@ -96,26 +91,26 @@
 }
 
 .box {
+  position: relative;
   flex: 0 0 330px;
   min-height: 400px;
+  max-width: 330px;
   background-color: rgb(29, 128, 255);
   border: 5px solid black;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
   z-index: 2;
-
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 4rem;
+  position: relative;
 }
 
 .box:hover {
   background-color: #0370c2;
-  /* transform: scale(1.05); */
-  /* z-index: 5; */
 }
 
 .snap_scroller {
@@ -156,6 +151,7 @@
   .box {
     flex: 0 0 250px;
     height: 350px;
+    max-width: 250px;
   }
 }
 
@@ -179,6 +175,7 @@
   .box {
     flex: 0 0 500px;
     height: 350px;
+    max-width: 500px;
   }
 }
 

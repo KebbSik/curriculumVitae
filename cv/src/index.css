@@ -102,6 +102,7 @@ section > *:first-child {
 
 .logo img {
   width: 70px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -791,7 +792,7 @@ footer {
 .footer_logo img {
   width: 150px;
   height: 150px;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: var(--white-color);
 }
 
@@ -813,11 +814,11 @@ footer {
 .footer_list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 
-.footer_list li {
+.footer_list a {
   font-size: 30px;
   width: 50px;
   height: 50px;
@@ -828,11 +829,13 @@ footer {
   background-color: var(--white-color);
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
-.footer_list li:hover {
+/* .footer_list a:hover {
   box-shadow: 0px 0px 45px var(--white-color);
-}
+} */
 
 @media (max-width: 992px) {
 }

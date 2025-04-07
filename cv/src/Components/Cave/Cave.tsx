@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import caveFront from "../../assets/cave_back_3.png";
 // import caveFront from "../../assets/cave_back_3.svg";
 import stones from "../../assets/stones.png";
+import crossedFingers from "../../assets/stickers/fingers_crossed_soon.png";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -47,22 +48,37 @@ const Cave = () => {
             </button>
             <div ref={containerRef} className="cave_container snap_scroller">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
-                (number) => (
+                (content) => (
                   <motion.div
-                    // initial={{ opacity: 0, scale: 0.95 }}
-                    // whileInView={{ opacity: 1, scale: 1 }}
-                    // transition={{ duration: 0.1, ease: "linear" }}
-
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.01 }}
                     className="box"
-                    key={number}
+                    key={content}
                   >
-                    {number}
+                    <div>
+                      {/* bug 'catcher', this approach needed only when snapscroll has more than 1 element*/}
+                      <div></div>
+                      <motion.div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundImage: `url(${crossedFingers})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                          zIndex: 1,
+                          opacity: 0.4,
+                        }}
+                      />
+                    </div>
                   </motion.div>
                 )
               )}
             </div>
+
             <button className="cave_btn right" onClick={() => scrollNext()}>
               <i className="fa-solid fa-chevron-right"></i>
             </button>

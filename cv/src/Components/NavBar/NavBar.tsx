@@ -23,7 +23,7 @@ const NavBar = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="header"
     >
-      <a href="#" className="logo">
+      <a onClick={() => scroller("home")} className="logo">
         <img src={logo} alt="logo" />
       </a>
       <label htmlFor="" className="icons ">
@@ -42,13 +42,13 @@ const NavBar = () => {
       </label>
 
       <nav className="navbar">
-        <motion.a
+        {/* <motion.a
           onClick={() => scroller("home")}
           whileTap={whileTapProp}
           whileHover={whileHoverProp}
         >
           Home
-        </motion.a>
+        </motion.a> */}
         <motion.a
           onClick={() => scroller("about")}
           whileTap={whileTapProp}
@@ -85,17 +85,40 @@ const NavBar = () => {
           openedMenu ? "navbarToggle displayToggleNav" : "navbarToggle"
         }
       >
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
+        {/* <motion.a
+          onClick={() => scroller("home")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           Home
-        </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
+        </motion.a> */}
+        <motion.a
+          onClick={() => scroller("about")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           About
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
+        <motion.a
+          onClick={() => scroller("skills")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
+          Skills
+        </motion.a>
+        <motion.a
+          onClick={() => scroller("projects")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           Projects
         </motion.a>
 
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
+        <motion.a
+          onClick={() => scroller("contact")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           Contact
         </motion.a>
       </nav>
