@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 
 import bike from "../../assets/stickers/motorbike.png";
 import thumbs from "../../assets/stickers/thumbs.png";
+import cv from "../../assets/CV.pdf";
 
 const Last = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = thumbs;
-    link.download = "thumbs.png";
+    link.href = cv;
+    link.download = "cv.pdf";
     link.click();
   };
   return (

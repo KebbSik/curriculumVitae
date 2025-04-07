@@ -186,7 +186,7 @@ const Paralax = () => {
               // pathOffset: 1,
 
               fill: "rgb(3, 112, 194)",
-              scale: max768 ? 2 : 3,
+              scale: max1280 ? 2 : 3,
             }}
             whileInView={{ scale: 1, fill: "rgb(255, 255, 255)" }}
             viewport={{ once: true }}

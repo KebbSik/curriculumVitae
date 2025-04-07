@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import portrait from "../../assets/stickers/portrait.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
+import cv from "../../assets/CV.pdf";
 
 const Hero = () => {
   const whileTapProp = {
@@ -12,8 +13,8 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = portrait;
-    link.download = "portrait.png";
+    link.href = cv;
+    link.download = "cv.pdf";
     link.click();
   };
   return (

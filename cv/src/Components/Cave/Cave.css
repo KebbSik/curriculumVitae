@@ -182,5 +182,6 @@
 @media (max-width: 768px) {
   .box {
     flex: 0 0 300px;
+    max-width: 350px;
   }
 }
