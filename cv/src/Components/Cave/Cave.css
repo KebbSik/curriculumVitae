@@ -79,6 +79,8 @@
   justify-content: space-around;
   gap: 3rem;
   overflow-x: scroll;
+
+  padding: 1rem auto;
   /* transform: translateY(-10%); */
 }
 
@@ -96,7 +98,7 @@
 .box {
   flex: 0 0 330px;
   min-height: 400px;
-  background-color: rgb(137, 41, 41);
+  background-color: rgb(29, 128, 255);
   border: 5px solid black;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
@@ -111,9 +113,9 @@
 }
 
 .box:hover {
-  background-color: red;
-  transform: scale(1.05);
-  z-index: 5;
+  background-color: #0370c2;
+  /* transform: scale(1.05); */
+  /* z-index: 5; */
 }
 
 .snap_scroller {
@@ -134,6 +136,16 @@
   }
 } */
 
+/* Scrollbar hiders for different browsers */
+.snap_scroller::-webkit-scrollbar {
+  display: none;
+}
+.snap_scroller {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* -----------------------------------Breakpoints */
 @media (min-width: 1960px) {
   .cave_img {
     object-fit: fill;
@@ -141,9 +153,6 @@
 }
 
 @media (max-width: 1279px) {
-  .cave_img {
-    /* object-fit: cover; */
-  }
   .box {
     flex: 0 0 250px;
     height: 350px;

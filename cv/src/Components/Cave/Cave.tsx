@@ -54,6 +54,8 @@ const Cave = () => {
                     // whileInView={{ opacity: 1, scale: 1 }}
                     // transition={{ duration: 0.1, ease: "linear" }}
 
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.01 }}
                     className="box"
                     key={number}
                   >
