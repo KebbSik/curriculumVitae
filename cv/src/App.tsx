@@ -33,13 +33,27 @@ function App() {
         }}
       ></motion.div>
       <NavBar />
-      <Paralax />
-      <Hero />
+      <div id="home">
+        <Paralax />
+      </div>
+      <div id="about">
+        <div style={{ height: "1px" }} />{" "}
+        {/* SmoothScroll 'catcher', this approach need some upgrade*/}
+        <Hero />
+      </div>
       <About />
-      <Skills />
-      <Cave />
+      <div id="skills">
+        <div style={{ height: "1px" }} />{" "}
+        {/* SmoothScroll 'catcher', this approach need some upgrade*/}
+        <Skills />
+      </div>
+      <div id="projects">
+        <Cave />
+      </div>
       <Last />
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </>
   );
 }

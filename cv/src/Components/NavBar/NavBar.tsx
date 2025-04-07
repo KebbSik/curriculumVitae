@@ -8,6 +8,14 @@ const NavBar = () => {
   const whileTapProp = { scale: 0.95, rotate: -2, transition: { duration: 0 } };
   const whileHoverProp = { scale: 1.2, transition: { duration: 0 } };
 
+  const scroller = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.header
       initial={{ y: -85 }}
@@ -34,19 +42,40 @@ const NavBar = () => {
       </label>
 
       <nav className="navbar">
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+        <motion.a
+          onClick={() => scroller("home")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           Home
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+        <motion.a
+          onClick={() => scroller("about")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           About
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
-          Gallery
+        <motion.a
+          onClick={() => scroller("skills")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
+          Skills
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
-          Services
+        <motion.a
+          onClick={() => scroller("projects")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
+          Projects
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+
+        <motion.a
+          onClick={() => scroller("contact")}
+          whileTap={whileTapProp}
+          whileHover={whileHoverProp}
+        >
           Contact
         </motion.a>
       </nav>
@@ -56,19 +85,17 @@ const NavBar = () => {
           openedMenu ? "navbarToggle displayToggleNav" : "navbarToggle"
         }
       >
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
           Home
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
           About
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
-          Gallery
+        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
+          Projects
         </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
-          Services
-        </motion.a>
-        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp} href="#">
+
+        <motion.a whileTap={whileTapProp} whileHover={whileHoverProp}>
           Contact
         </motion.a>
       </nav>

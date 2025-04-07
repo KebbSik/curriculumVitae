@@ -7,7 +7,6 @@ import stones from "../../assets/stones.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import "./Cave.css";
-import { div } from "motion/react-client";
 
 const Cave = () => {
   const containerRef = useRef<HTMLDivElement>(null);

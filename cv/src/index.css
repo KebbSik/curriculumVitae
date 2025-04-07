@@ -50,7 +50,7 @@ section {
 
 section > *:first-child {
   /* border: 1px solid red; */
-  margin: 200px 0px;
+  margin: 250px 0px;
   padding: 40px 20px;
 }
 
@@ -122,6 +122,7 @@ section > *:first-child {
   margin-left: 2.5rem;
   transition: transform 0.1s ease-in-out;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* .navbar > a:hover,
