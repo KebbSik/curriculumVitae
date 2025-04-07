@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import portrait from "../../assets/stickers/portrait.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
 
@@ -57,15 +57,13 @@ const Hero = () => {
                   x: 0,
                   transition: { duration: 0.6, delay: 0.5, ease: "easeInOut" },
                 }}
-                // transition={}
+                style={{ cursor: "default", border: "none" }}
                 viewport={{ once: true }}
-                // href=""
                 className="see-work-btn"
-                whileTap={whileTapProp}
-                whileHover={whileHoverProp}
+                // whileTap={whileTapProp}
+                // whileHover={whileHoverProp}
               >
-                See My work
-                <i className="fa-solid fa-arrow-right-long"></i>
+                Or scroll down for more :)
               </motion.a>
             </div>
           </div>
