@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 interface Props {
   isReversed?: boolean;
   image?: string;
+  content: string;
 }
 
 const text = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
@@ -26,7 +27,7 @@ const letters = {
   },
 };
 
-const AboutCard = ({ isReversed, image }: Props) => {
+const AboutCard = ({ isReversed, image, content }: Props) => {
   return (
     <div className="about_card">
       <div
@@ -54,7 +55,7 @@ const AboutCard = ({ isReversed, image }: Props) => {
           viewport={{ once: true }}
           className="card_right"
         >
-          {text.split("").map((char, index) => (
+          {content.split("").map((char, index) => (
             <motion.text key={index} variants={letters}>
               {char}
             </motion.text>
