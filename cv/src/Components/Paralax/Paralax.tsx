@@ -181,7 +181,7 @@ const Paralax = () => {
             cx="50"
             cy="50"
             r="16"
-            fill="white"
+            // fill="white"
             initial={{
               // pathOffset: 1,
 
