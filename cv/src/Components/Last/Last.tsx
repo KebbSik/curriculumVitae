@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import bike from "../../assets/stickers/motorbike.png";
 import thumbs from "../../assets/stickers/thumbs.png";
-import cv from "../../assets/CV.pdf";
+import cv from "../../assets/CV_eng.pdf";
 
 const Last = () => {
   const downloadCV = () => {
