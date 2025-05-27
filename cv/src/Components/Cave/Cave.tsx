@@ -3,8 +3,7 @@ import { useRef } from "react";
 import caveFront from "../../assets/cave_back_3.png";
 // import caveFront from "../../assets/cave_back_3.svg";
 import stones from "../../assets/stones.png";
-import crossedFingers from "../../assets/stickers/fingers_crossed_soon.png";
-import testImage from "../../assets/logo.png";
+import projects from "../Cave/Projects";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -33,39 +32,39 @@ const Cave = () => {
     }
   };
 
-  const projects = [
-    {
-      name: "Fruits",
-      href: "https://kebbsik.github.io/reactFruits/",
-      image: testImage,
-      description:
-        "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia molestias sint cumque cupiditate itaque in rerum sit officiis minus autem placeat corporis recusandae, repudiandae quasi odit, id provident magni.",
-    },
-    {
-      name: "name2",
-      href: "href2",
-      image: crossedFingers,
-      description: "description",
-    },
-    {
-      name: "name3",
-      href: "href3",
-      image: crossedFingers,
-      description: "description",
-    },
-    {
-      name: "name4",
-      href: "href4",
-      image: crossedFingers,
-      description: "description",
-    },
-    {
-      name: "name5",
-      href: "href5",
-      image: crossedFingers,
-      description: "description",
-    },
-  ];
+  // const projects = [
+  //   {
+  //     name: "Fruits",
+  //     href: "https://kebbsik.github.io/reactFruits/",
+  //     image: testImage,
+  //     description:
+  //       "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia molestias sint cumque cupiditate itaque in rerum sit officiis minus autem placeat corporis recusandae, repudiandae quasi odit, id provident magni.",
+  //   },
+  //   {
+  //     name: "name2",
+  //     href: "href2",
+  //     image: crossedFingers,
+  //     description: "description",
+  //   },
+  //   {
+  //     name: "name3",
+  //     href: "href3",
+  //     image: crossedFingers,
+  //     description: "description",
+  //   },
+  //   {
+  //     name: "name4",
+  //     href: "href4",
+  //     image: crossedFingers,
+  //     description: "description",
+  //   },
+  //   {
+  //     name: "name5",
+  //     href: "href5",
+  //     image: crossedFingers,
+  //     description: "description",
+  //   },
+  // ];
 
   return (
     <div className="overWrapper">
