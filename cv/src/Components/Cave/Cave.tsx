@@ -4,10 +4,12 @@ import caveFront from "../../assets/cave_back_3.png";
 // import caveFront from "../../assets/cave_back_3.svg";
 import stones from "../../assets/stones.png";
 import crossedFingers from "../../assets/stickers/fingers_crossed_soon.png";
+import testImage from "../../assets/logo.png";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import "./Cave.css";
+import Box from "./Box";
 
 const Cave = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -31,6 +33,40 @@ const Cave = () => {
     }
   };
 
+  const projects = [
+    {
+      name: "Fruits",
+      href: "https://kebbsik.github.io/reactFruits/",
+      image: testImage,
+      description:
+        "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia molestias sint cumque cupiditate itaque in rerum sit officiis minus autem placeat corporis recusandae, repudiandae quasi odit, id provident magni.",
+    },
+    {
+      name: "name2",
+      href: "href2",
+      image: crossedFingers,
+      description: "description",
+    },
+    {
+      name: "name3",
+      href: "href3",
+      image: crossedFingers,
+      description: "description",
+    },
+    {
+      name: "name4",
+      href: "href4",
+      image: crossedFingers,
+      description: "description",
+    },
+    {
+      name: "name5",
+      href: "href5",
+      image: crossedFingers,
+      description: "description",
+    },
+  ];
+
   return (
     <div className="overWrapper">
       <motion.div className="whole_cave">
@@ -47,36 +83,14 @@ const Cave = () => {
               <i className="fa-solid fa-chevron-left"></i>
             </button>
             <div ref={containerRef} className="cave_container snap_scroller">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
-                (content) => (
-                  <motion.div
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ duration: 0.01 }}
-                    className="box"
-                    key={content}
-                  >
-                    <div>
-                      {/* bug 'catcher', this approach needed only when snapscroll has more than 1 element*/}
-                      <div></div>
-                      <motion.div
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100%",
-                          height: "100%",
-                          backgroundImage: `url(${crossedFingers})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
-                          zIndex: 1,
-                          opacity: 0.4,
-                        }}
-                      />
-                    </div>
-                  </motion.div>
-                )
-              )}
+              {projects.map((project) => (
+                <Box
+                  name={project.name}
+                  backgroundImage={project.image}
+                  href={project.href}
+                  description={project.description}
+                ></Box>
+              ))}
             </div>
 
             <button className="cave_btn right" onClick={() => scrollNext()}>
