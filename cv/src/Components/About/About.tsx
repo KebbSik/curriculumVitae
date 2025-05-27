@@ -11,7 +11,7 @@ import AboutCard from "./AboutCard";
 // ];
 
 const descriptionsArr = [
-  "I am a beginner programmer who approaches challenges with passion. On a daily basis, I learn and create web applications, constantly working on developing my skills. By creating new project, I expand my knowledge of technologies such as JavaScript, React, TypeScript, and many others.",
+  "I am a beginner developer who approaches challenges with passion. On a daily basis, I learn and create web applications, constantly working on developing my skills. By creating new project, I expand my knowledge of technologies such as JavaScript, React, TypeScript, and many others.",
   "During the creating process, I pay special attention to creativity. I believe that applications should not only work, but also capture the user's attention. I always try to make my projects not only functional but also unique and engaging. I always aim to make them in 'my style' - interesting visual solutions and thoughtful interactions.",
   "I created an interactive portfolio to better showcase my ideas. Feel free to check it out and would love to hear your constructive feedback. You can contact me through LinkedIn. :)",
 ];
