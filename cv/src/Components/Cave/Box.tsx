@@ -11,13 +11,14 @@ const Box = ({ name, backgroundImage, href, description }: Props) => {
   return (
     <>
       <motion.div
-        whileTap={{ scale: 0.95 }}
-        transition={{ duration: 0.01 }}
+        // whileTap={{ scale: 0.95 }}
+        // transition={{ duration: 0.01 }}
         className="box"
         key={name}
         onClick={() => window.open(href, "_blank")}
+        style={{ pointerEvents: name === "soon" ? "none" : "auto" }}
       >
-        <div style={{ height: "100%", width: "100%" }}>
+        <div style={{ position: "relative", height: "100%", width: "100%" }}>
           {/* <div> */}
           <motion.div
             style={{
@@ -27,16 +28,30 @@ const Box = ({ name, backgroundImage, href, description }: Props) => {
               width: "100%",
               height: "100%",
               backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: "cover",
+              backgroundSize: name === "soon" ? "contain" : "cover",
+              borderRadius: "15px",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              zIndex: 1,
-              opacity: 0.4,
+              zIndex: 0,
+              opacity: name === "soon" ? 0.4 : 1,
             }}
           />
-          <div className="project-content-container">
-            <p className="project-tittle">{name}</p>
-            <div className="project-description">{description}</div>
+          <div
+            style={{ zIndex: 1, position: "relative" }}
+            className="project-content-container"
+          >
+            <p
+              style={{ display: name === "soon" ? "none" : "" }}
+              className="project-tittle"
+            >
+              {name}
+            </p>
+            <div
+              style={{ display: name === "soon" ? "none" : "" }}
+              className="project-description"
+            >
+              {description}
+            </div>
           </div>
         </div>
       </motion.div>

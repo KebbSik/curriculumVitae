@@ -74,6 +74,7 @@
   /* min-height: 600px; */
   /* justify-content: space-around; */
   display: flex;
+  padding: 5rem;
   gap: 30rem;
   overflow-x: scroll;
   padding: 1rem auto;
@@ -96,10 +97,10 @@
   flex: 0 0 50%;
   min-height: 400px;
   max-width: 900px;
-  background-color: rgb(29, 128, 255);
+  background-color: rgba(29, 127, 255, 0.734);
   border: 5px solid black;
   border-radius: 20px;
-  transition: 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
   cursor: pointer;
   z-index: 2;
   /* display: flex; */
@@ -117,23 +118,39 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+
   /* gap: 10rem; */
 }
 .project-tittle {
   font-size: 3rem;
   text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  max-width: 60%;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: 600;
+  border: 3px solid black;
 }
 
 .project-description {
   font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
   padding: 1rem;
   border-radius: 20px;
+  border: 3px solid black;
 }
 
 .box:hover {
   background-color: #0370c2;
+  transform: scale(1.03);
+  box-shadow: 0 0 60px 3px white;
+}
+.box:active {
+  transform: scale(0.97);
 }
 
 .snap_scroller {
@@ -212,6 +229,10 @@
     font-size: 0.8rem;
     /* background: rgba(255, 255, 255, 0.3); */
     padding: 0.7rem;
+  }
+  .project-tittle {
+    font-size: 2rem;
+    max-width: 75%;
   }
 }
 

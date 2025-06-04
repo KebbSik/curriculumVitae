@@ -1,37 +1,37 @@
 import crossedFingers from "../../assets/stickers/fingers_crossed_soon.png";
-import testImage from "../../assets/logo.png";
+import testImage from "../../assets/fruit_logo.png";
 
   const projects = [
     {
-      name: "Fruits",
+      name: "SVG Fruits",
       href: "https://kebbsik.github.io/reactFruits/",
       image: testImage,
       description:
-        "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia molestias sint cumque cupiditate itaque in rerum sit officiis minus autem placeat corporis recusandae, repudiandae quasi odit, id provident magni.",
+        "Playful, animated web project that showcases the appearance, properties, and global occurrence of various fruits. Each fruit is presented in a colorful, SVG-based cartoon style, blending educational content with engaging visual storytelling.",
     },
     {
-      name: "name2",
-      href: "href2",
+      name: "soon",
+      href: "",
       image: crossedFingers,
-      description: "description",
+      description: "",
     },
     {
-      name: "name3",
-      href: "href3",
+      name: "soon",
+      href: "",
       image: crossedFingers,
-      description: "description",
+      description: "",
     },
     {
-      name: "name4",
-      href: "href4",
+      name: "soon",
+      href: "",
       image: crossedFingers,
-      description: "description",
+      description: "",
     },
     {
-      name: "name5",
-      href: "href5",
+       name: "soon",
+      href: "",
       image: crossedFingers,
-      description: "description",
+      description: "",
     },
   ];
 
