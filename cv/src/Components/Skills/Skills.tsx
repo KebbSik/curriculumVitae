@@ -12,24 +12,24 @@ import { FaNode } from "react-icons/fa";
 
 const Skills = () => {
   const skillList = [
-    { skillName: "HTML", percent: 77, color: "aqua", icon: FaHtml5 },
-    { skillName: "CSS", percent: 68, color: "yellow", icon: FaCss3 },
+    { skillName: "HTML", level: "junior", icon: FaHtml5 },
+    { skillName: "CSS", level: "junior", icon: FaCss3 },
     {
       skillName: "JavaScript",
-      percent: 83,
-      color: "chartreuse",
+      level: "junior",
+
       icon: FaJs,
     },
-    { skillName: "Git", percent: 57, color: "crimson", icon: FaGitAlt },
-    { skillName: "React", percent: 42, color: "dodgerBlue", icon: FaReact },
-    { skillName: "Java", percent: 60, color: "lime", icon: FaJava },
+    { skillName: "Git", level: "junior", icon: FaGitAlt },
+    { skillName: "React", level: "junior", icon: FaReact },
+    // { skillName: "Java", level: "junior", icon: FaJava },
     {
       skillName: "TypeScript",
-      percent: 33,
-      color: "orange",
+      level: "junior",
+
       icon: SiTypescript,
     },
-    { skillName: "Node", percent: 45, color: "pink", icon: FaNode },
+    { skillName: "Node", level: "begginer", icon: FaNode },
   ];
 
   return (
@@ -40,8 +40,7 @@ const Skills = () => {
           <SkillCard
             key={index}
             skillName={skill.skillName}
-            percent={skill.percent}
-            color={skill.color}
+            level={skill.level}
             icon={skill.icon}
           />
         ))}

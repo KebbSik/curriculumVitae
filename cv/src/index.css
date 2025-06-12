@@ -569,38 +569,28 @@ main {
   justify-content: center;
 }
 
-.percent {
-  font-size: 1.5rem;
+.skill_name {
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.1rem;
   position: relative;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  margin: 1.5rem;
+  border-radius: 45px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 300px;
 }
 
-.percent > .percent_digit {
-  transform: translateY(5px);
-}
-
-.skill_name {
+.level {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
   width: 10rem;
-}
-
-.card > * {
-  /* border: 1px solid orange; */
-}
-
-.svg_lines_wrapper > * {
-  position: absolute;
-
-  left: 0;
-}
-.skillCard_container .card .percent sup {
-  /* transform: transslateY(-30px); */
 }
 
 @media (max-width: 992px) {
@@ -610,14 +600,15 @@ main {
   .skill_icon {
     font-size: 7rem;
   }
-  .skill_name {
+  .level {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .percent {
+  .skill_name {
     /* transform: scale(0.7); */
+    font-size: 1.5rem;
   }
 }
 
