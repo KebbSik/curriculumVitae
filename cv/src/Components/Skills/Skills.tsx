@@ -6,7 +6,6 @@ import { FaCss3 } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 

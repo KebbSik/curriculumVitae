@@ -1,7 +1,6 @@
-import { motion, useInView } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 import { IconType } from "react-icons";
-import { useMediaQuery } from "react-responsive";
 
 interface Props {
   level: string;
