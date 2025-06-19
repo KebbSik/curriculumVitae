@@ -14,7 +14,7 @@ import CssPictures from "../../assets/CssPictures.jpg";
       name: "CssPictures",
       href: "https://kebbsik.github.io/CssPictures/",
       image: CssPictures,
-      description: "Page devoted to showcase creation of graphics with CSS and HTML. Mostly inspired by CodeWar",
+      description: "Page devoted to showcase creation of graphics with CSS and HTML. Mostly inspired by CodeWar.",
     },
     {
       name: "soon",
