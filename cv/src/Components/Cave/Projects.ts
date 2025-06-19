@@ -11,7 +11,7 @@ import CssPictures from "../../assets/CssPictures.jpg";
         "Playful, animated web project that showcases the appearance, properties, and global occurrence of various fruits. Each fruit is presented in a colorful, SVG-based cartoon style, blending educational content with engaging visual storytelling.",
     },
     {
-      name: "CssPictures",
+      name: "Css Pictures",
       href: "https://kebbsik.github.io/CssPictures/",
       image: CssPictures,
       description: "Page devoted to showcase creation of graphics with CSS and HTML. Mostly inspired by CodeWar.",
