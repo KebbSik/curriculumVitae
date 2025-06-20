@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import portrait from "../../assets/stickers/portrait.png";
 import sticker2 from "../../assets/stickers/sticker2.png";
-import cv from "../../assets/CV_eng.pdf";
+// import cv from "../../assets/CV_eng.pdf";
 
 const Hero = () => {
   const whileTapProp = {
