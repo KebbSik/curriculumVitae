@@ -49,7 +49,8 @@ const Hero = () => {
                 }}
                 // transition={}
                 viewport={{ once: true }}
-                href="https://drive.google.com/file/d/1nKHIKb93oJDFklLGyJCSQ0bnHhaWoJhF/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1nKHIKb93oJDFklLGyJCSQ0bnHhaWoJhF/view?usp=sharing"
+                href="https://drive.google.com/file/d/1stWFpPeHBcSUEpoDy90aUtJlQGWCodUy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-btn"
