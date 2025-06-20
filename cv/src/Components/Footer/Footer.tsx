@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 
 const Footer = () => {
   const whileHoverProp = {
-    boxShadow: "0 0 25px 2px #fff",
+    boxShadow: "0 0 15px 2px #fff",
     // scale: 1.1,
     transition: { duration: 0, ease: "anticipate" },
   };

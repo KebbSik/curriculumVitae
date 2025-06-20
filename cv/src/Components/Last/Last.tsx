@@ -5,12 +5,12 @@ import thumbs from "../../assets/stickers/thumbs.png";
 import cv from "../../assets/CV_eng.pdf";
 
 const Last = () => {
-  const downloadCV = () => {
-    const link = document.createElement("a");
-    link.href = cv;
-    link.download = "cv.pdf";
-    link.click();
-  };
+  // const downloadCV = () => {
+  //   const link = document.createElement("a");
+  //   link.href = cv;
+  //   link.download = "cv.pdf";
+  //   link.click();
+  // };
   return (
     <section className="last">
       <div className="last_container">
@@ -23,14 +23,16 @@ const Last = () => {
           viewport={{ once: true, margin: "0px 2000px 0px 2000px" }}
         >
           <motion.a
-            // href=""
+            href="https://drive.google.com/file/d/1nKHIKb93oJDFklLGyJCSQ0bnHhaWoJhF/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className=" big-btn"
             whileHover={{ boxShadow: "0 0 50px #fff", scale: 1.05 }}
             whileTap={{ boxShadow: "0 0 25px #fff", rotate: 3, scale: 0.95 }}
             transition={{ duration: 0 }}
-            onClick={downloadCV}
+            // onClick={downloadCV}
           >
-            Download my CV
+            View My Resume
           </motion.a>
           <motion.img
             className="moto_bike"

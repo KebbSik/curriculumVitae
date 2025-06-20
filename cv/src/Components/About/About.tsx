@@ -22,29 +22,31 @@ const About = () => {
       <div className="about_wrapper">
         <div className="grid">
           <motion.div
-            className="about_Card"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "anticipate" }}
-            viewport={{ once: true }}
+            className="about_card_wrapper"
+            // initial={{ opacity: 0, x: -100 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 1, ease: "anticipate" }}
+            // viewport={{ once: true }}
           >
             <AboutCard image={wallBurst} content={descriptionsArr[0]} />
           </motion.div>
           <motion.div
-            className="about_Card"
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            className="about_card_wrapper"
+
+            // initial={{ opacity: 0, x: 100 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 1 }}
+            // viewport={{ once: true }}
           >
             <AboutCard image={apple} isReversed content={descriptionsArr[1]} />
           </motion.div>
           <motion.div
-            className="about_Card"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "anticipate" }}
-            viewport={{ once: true }}
+            className="about_card_wrapper"
+
+            // initial={{ opacity: 0, x: -100 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 1, ease: "anticipate" }}
+            // viewport={{ once: true }}
           >
             <AboutCard image={snakeHiss} content={descriptionsArr[2]} />
           </motion.div>

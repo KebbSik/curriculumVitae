@@ -6,7 +6,7 @@ import logo from "../../assets/logo.png";
 const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const whileTapProp = { scale: 0.95, rotate: -2, transition: { duration: 0 } };
-  const whileHoverProp = { scale: 1.2, transition: { duration: 0 } };
+  const whileHoverProp = { scale: 1.15, transition: { duration: 0 } };
 
   const scroller = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -67,8 +67,9 @@ const NavBar = () => {
           onClick={() => scroller("projects")}
           whileTap={whileTapProp}
           whileHover={whileHoverProp}
+          className="nav_project_btn"
         >
-          Projects
+          Projects Cave
         </motion.a>
 
         <motion.a

@@ -37,6 +37,8 @@ const AboutCard = ({ isReversed, image, content }: Props) => {
       >
         <div className="card_left">
           <motion.img
+            whileInView={{ scale: [1, 1.1, 1] }}
+            viewport={{ once: true, margin: "-50% 0px -50% 0px" }}
             drag
             dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             dragElastic={0.05}

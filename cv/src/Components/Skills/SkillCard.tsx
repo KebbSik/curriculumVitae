@@ -10,8 +10,8 @@ interface Props {
 }
 
 // transitions
-const outterTransiton = 1;
-const outterDelay = 0.5;
+const outterTransiton = 0.5;
+const outterDelay = 0.2;
 
 const SkillCard = ({ level, skillName, icon: Icon }: Props) => {
   const ref = useRef(null);

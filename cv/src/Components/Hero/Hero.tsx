@@ -11,12 +11,12 @@ const Hero = () => {
   };
   const whileHoverProp = { scale: 1.2, transition: { delay: 0, duration: 0 } };
 
-  const downloadCV = () => {
-    const link = document.createElement("a");
-    link.href = cv;
-    link.download = "cv.pdf";
-    link.click();
-  };
+  // const downloadCV = () => {
+  //   const link = document.createElement("a");
+  //   link.href = cv;
+  //   link.download = "cv.pdf";
+  //   link.click();
+  // };
   return (
     // <main>
     <section>
@@ -30,9 +30,9 @@ const Hero = () => {
               viewport={{ once: true }}
               className="info"
             >
-              <p className="message">Welcome to My portfolio</p>
+              {/* <p className="message">Welcome to My portfolio</p> */}
               <p className="title">
-                Hello my <br /> name is <span>Kevin.</span>{" "}
+                Hello, my <br /> name is <span>Kevin.</span>{" "}
               </p>
               <p className="description">
                 I'm FullStack Developer from Poland. <br /> Creating responsive,
@@ -49,13 +49,16 @@ const Hero = () => {
                 }}
                 // transition={}
                 viewport={{ once: true }}
-                // href="#"
+                href="https://drive.google.com/file/d/1nKHIKb93oJDFklLGyJCSQ0bnHhaWoJhF/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="download-btn"
                 whileTap={whileTapProp}
                 whileHover={whileHoverProp}
-                onClick={downloadCV}
+                // onClick={downloadCV}
               >
-                Download CV
+                {/* See what’s behind the code */}
+                Review my CV
               </motion.a>
 
               <motion.a
@@ -71,7 +74,7 @@ const Hero = () => {
                 // whileTap={whileTapProp}
                 // whileHover={whileHoverProp}
               >
-                Or scroll down for more :)
+                or just scroll down :)
               </motion.a>
             </div>
           </div>
