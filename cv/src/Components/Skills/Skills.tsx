@@ -34,7 +34,9 @@ const Skills = () => {
   return (
     <section className="skills">
       <div className="wrapper">
-        <h1>This is couple of my skills. Feel free to check them :)</h1>
+        <h1>
+          This is couple of my <span>skills</span>. Feel free to check them :)
+        </h1>
         {skillList.map((skill, index) => (
           <SkillCard
             key={index}

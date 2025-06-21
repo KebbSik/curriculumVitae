@@ -13,6 +13,7 @@ const NavBar = () => {
 
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setOpenedMenu(false);
     }
   };
 
@@ -112,7 +113,9 @@ const NavBar = () => {
           whileTap={whileTapProp}
           whileHover={whileHoverProp}
         >
-          Projects
+          <div className="nav_project_btn_wrapper">
+            <div className="nav_project_btn">Projects Cave</div>
+          </div>
         </motion.a>
 
         <motion.a

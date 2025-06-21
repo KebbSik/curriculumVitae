@@ -2,6 +2,24 @@
   height: 100vh;
   position: relative;
 }
+
+.caveTittle {
+  color: #fff;
+}
+
+.caveTittle > h1 {
+  font-size: 3rem;
+}
+.caveTittle span {
+  color: #efb268;
+  font-weight: 600;
+}
+
+.caveTittle p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 .whole_cave {
   position: relative;
   width: 100%;

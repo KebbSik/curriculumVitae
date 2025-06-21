@@ -67,44 +67,54 @@ const Cave = () => {
   // ];
 
   return (
-    <div className="overWrapper">
-      <motion.div className="whole_cave">
-        <motion.img
-          className="cave_img img_back"
-          src={caveFront}
-          alt=""
-          style={{ y: parallaxEffect, position: "absolute" }}
-        />
+    <div className="caveSection">
+      <div className="caveTittle">
+        <h1>
+          Projects <span>Cave</span>
+        </h1>
+        <p>
+          Let's <span>explore</span> my projects !
+        </p>
+      </div>
+      <div className="overWrapper">
+        <motion.div className="whole_cave">
+          <motion.img
+            className="cave_img img_back"
+            src={caveFront}
+            alt=""
+            style={{ y: parallaxEffect, position: "absolute" }}
+          />
 
-        <div className="cave_section">
-          <div className="cave_wrapper ">
-            <button className="cave_btn left" onClick={() => scrollPrev()}>
-              <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            <div ref={containerRef} className="cave_container snap_scroller">
-              {projects.map((project) => (
-                <Box
-                  name={project.name}
-                  backgroundImage={project.image}
-                  href={project.href}
-                  description={project.description}
-                ></Box>
-              ))}
+          <div className="cave_section">
+            <div className="cave_wrapper ">
+              <button className="cave_btn left" onClick={() => scrollPrev()}>
+                <i className="fa-solid fa-chevron-left"></i>
+              </button>
+              <div ref={containerRef} className="cave_container snap_scroller">
+                {projects.map((project) => (
+                  <Box
+                    name={project.name}
+                    backgroundImage={project.image}
+                    href={project.href}
+                    description={project.description}
+                  ></Box>
+                ))}
+              </div>
+
+              <button className="cave_btn right" onClick={() => scrollNext()}>
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
-
-            <button className="cave_btn right" onClick={() => scrollNext()}>
-              <i className="fa-solid fa-chevron-right"></i>
-            </button>
           </div>
-        </div>
-      </motion.div>
-      <motion.img
-        className="cave_img img_front"
-        src={stones}
-        alt=""
-        initial={{ opacity: 1 }}
-        whileInView={{ opacity: 1 }}
-      />
+        </motion.div>
+        <motion.img
+          className="cave_img img_front"
+          src={stones}
+          alt=""
+          initial={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
+        />
+      </div>
     </div>
   );
 };

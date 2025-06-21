@@ -119,6 +119,7 @@ section > *:first-child {
 .navbarToggle a {
   position: relative;
   font-size: 1.4rem;
+  /* width: 50%; */
   color: var(--white-color);
   text-decoration: none;
   font-weight: 500;
@@ -128,12 +129,18 @@ section > *:first-child {
   cursor: pointer;
 }
 /* tutej */
-.navbar .nav_project_btn {
+nav .nav_project_btn {
   background-color: #ffa336;
   border: 3px solid #fff;
   padding: 8px;
   border-radius: 20px;
   font-weight: 600;
+}
+
+nav .nav_project_btn_wrapper {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
 }
 
 /* .navbar > a:hover,
@@ -578,6 +585,7 @@ main {
   font-size: 10rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .skill_name {
@@ -593,7 +601,7 @@ main {
   border-radius: 45px;
   flex-grow: 1;
   flex-shrink: 1;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .level {
@@ -634,6 +642,9 @@ main {
   .skill_icon {
     font-size: 5rem;
   }
+  .skill_name {
+    margin: 1.5rem 0.5rem;
+  }
 }
 
 /* -------------------- Skills -------------------- */
@@ -650,6 +661,11 @@ main {
 .wrapper > h1 {
   font-size: 3rem;
   margin-bottom: 7rem;
+}
+
+.wrapper > h1 > span {
+  color: #efb268;
+  font-weight: 600;
 }
 
 .wrapper {
