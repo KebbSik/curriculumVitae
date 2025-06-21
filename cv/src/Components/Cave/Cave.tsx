@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import caveFront from "../../assets/cave_back_3.png";
+import caveFront from "../../assets/cave_back_3.svg";
 // import caveFront from "../../assets/cave_back_3.svg";
 import stones from "../../assets/stones.png";
 import projects from "../Cave/Projects";
