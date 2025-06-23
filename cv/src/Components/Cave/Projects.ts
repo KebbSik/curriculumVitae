@@ -1,6 +1,7 @@
 import crossedFingers from "../../assets/stickers/fingers_crossed_soon.png";
 import reactFruits from "../../assets/fruit_logo.png";
 import CssPictures from "../../assets/CssPictures.jpg";
+import TicTacToe from "../../assets/TicTacToe.png";
 
   const projects = [
     {
@@ -17,20 +18,20 @@ import CssPictures from "../../assets/CssPictures.jpg";
       description: "Page devoted to showcase creation of graphics with CSS and HTML. Mostly inspired by CodeWar.",
     },
     {
-      name: "soon",
-      href: "",
-      image: crossedFingers,
-      description: "",
+      name: "Tic Tac Toe",
+      href: "https://kebbsik.github.io/TikTakToe/",
+      image: TicTacToe,
+      description: "A classic 2-player game where X and O take turns on a 3x3 grid. Built with JavaScript, it checks for wins or draws, includes a reset option, and lets players customize themes and choose their own signs.",
     },
     {
       name: "soon",
-      href: "",
+      href: "#",
       image: crossedFingers,
       description: "",
     },
     {
        name: "soon",
-      href: "",
+      href: "#",
       image: crossedFingers,
       description: "",
     },

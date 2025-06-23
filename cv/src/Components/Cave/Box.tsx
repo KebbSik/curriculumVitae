@@ -34,6 +34,10 @@ const Box = ({ name, backgroundImage, href, description }: Props) => {
               backgroundRepeat: "no-repeat",
               zIndex: 0,
               opacity: name === "soon" ? 0.4 : 1,
+              filter:
+                name !== "soon"
+                  ? "sepia(1) saturate(5) hue-rotate(90deg);"
+                  : "",
             }}
           />
           <div

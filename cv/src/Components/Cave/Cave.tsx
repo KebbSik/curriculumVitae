@@ -91,8 +91,9 @@ const Cave = () => {
                 <i className="fa-solid fa-chevron-left"></i>
               </button>
               <div ref={containerRef} className="cave_container snap_scroller">
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                   <Box
+                    key={project.name + index}
                     name={project.name}
                     backgroundImage={project.image}
                     href={project.href}
