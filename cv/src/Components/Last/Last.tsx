@@ -23,7 +23,8 @@ const Last = () => {
           viewport={{ once: true, margin: "0px 2000px 0px 2000px" }}
         >
           <motion.a
-            href="https://drive.google.com/file/d/1ZF3YLtzZZZFPu_9RwWByaNMrnbO3AMos/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1ZF3YLtzZZZFPu_9RwWByaNMrnbO3AMos/view?usp=sharing"
+            href="https://drive.google.com/file/d/126m8OaBaRen-JDo3qbNcn_lPM5ke9XPd/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className=" big-btn"
