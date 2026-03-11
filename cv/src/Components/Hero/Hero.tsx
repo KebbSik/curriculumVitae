@@ -51,7 +51,8 @@ const Hero = () => {
                 viewport={{ once: true }}
                 // href="https://drive.google.com/file/d/1ZF3YLtzZZZFPu_9RwWByaNMrnbO3AMos/view?usp=sharing"
                 // href="https://drive.google.com/file/d/126m8OaBaRen-JDo3qbNcn_lPM5ke9XPd/view?usp=sharing"
-                href="https://drive.google.com/file/d/1uLK7KzkxCA7hdiG6wcRRdM6Pzr8iIDnD/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1uLK7KzkxCA7hdiG6wcRRdM6Pzr8iIDnD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ej2L2E1mZfrNSD2DwMsaozK2EZ8UPBtJ/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-btn"
