@@ -24,7 +24,8 @@ const Last = () => {
         >
           <motion.a
             // href="https://drive.google.com/file/d/1ZF3YLtzZZZFPu_9RwWByaNMrnbO3AMos/view?usp=sharing"
-            href="https://drive.google.com/file/d/126m8OaBaRen-JDo3qbNcn_lPM5ke9XPd/view?usp=sharing"
+            // href="https://drive.google.com/file/d/126m8OaBaRen-JDo3qbNcn_lPM5ke9XPd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1uLK7KzkxCA7hdiG6wcRRdM6Pzr8iIDnD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className=" big-btn"
